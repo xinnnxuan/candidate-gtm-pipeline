@@ -1,0 +1,11 @@
+#!/bin/sh
+# Pre-commit hook: run the denylist gate over content and filenames.
+# Install:  cp tools/pre-commit .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
+# See docs/how-this-repo-was-sanitized.md for why this gate exists and why the
+# sensitive terms live in a git-ignored .denylist.local rather than in this file.
+node "$(git rev-parse --show-toplevel)/tools/check-denylist.mjs" || {
+  echo ""
+  echo "Commit blocked by the denylist gate. Fix the hits above, or adjudicate"
+  echo "a false positive by tightening the pattern in .denylist.local."
+  exit 1
+}

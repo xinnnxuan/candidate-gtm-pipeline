@@ -1,0 +1,89 @@
+---
+name: systemize-learnings
+description: >
+  At the close of a work session, triage what the back-and-forth actually
+  taught: which corrections deserve to be written back as repeatable system
+  improvements, which are single-case details, and which should rest as a plan
+  until they mature. Proposes the landing spot, the minimal edit, and the
+  acceptance check. Default is to propose only — never to edit long-term
+  sources directly.
+---
+
+# Systemize Learnings
+
+> **Public edition.** Adapted from a production system. This is the authority definition of the write-back triage framework; the retrospective command (see `retrospective.command.md` beside this file) routes into it but never restates it.
+
+## Intent
+
+At the end of a working session, sort the corrections, rework, stumbles, and insights into three piles:
+
+- **worth writing back** — a repeatable quality standard the system should own,
+- **not worth writing back** — single-case detail, ordinary judgment, or a passing preference,
+- **not ready** — a real observation that should rest as a plan, log, or follow-up until it matures.
+
+The goal: the *next* session does the right thing naturally, instead of depending on this conversation's memory.
+
+## The default is DON'T write
+
+This is the skill's defining bias. A system that absorbs every session's opinions becomes long, contradictory, and untrustworthy — rule sediment is a failure mode, not diligence. A candidate learning must *earn* its way into a long-term source. If nothing qualifies, the correct output is: **"nothing should be written back this round"** — with the main reason — and no manufactured change for the sake of having output.
+
+## Starting point
+
+Read only the sources, diffs, artifacts, and command outputs this session actually touched. Do not sweep the repository for this triage; open a source only when a candidate write-back might land there.
+
+## The four-question framework
+
+For every candidate learning, ask:
+
+1. Is this a quality standard, process gap, or source gap that will **recur across tasks**?
+2. Is it **already covered** by an existing source — and this session simply failed to follow it?
+3. If it is *not* written back, will another session **probably re-hit it, at a visible cost**?
+4. Would the minimal edit make the system **shorter, more stable, or better routed** — or just add one more prose rule?
+
+Only a high-confidence pass earns a write-back proposal. When the constraint is zero-exception, easy to miss, or needs a deterministic guarantee, prefer a script, hook, or validator over stronger prose.
+
+If the triage reveals that the real problem isn't "what did this round teach" but that a source itself has drifted — over-ruled, hard boundaries tangled with heuristics — recommend a dedicated health check on that source instead of patching it in-line.
+
+## Landing spots
+
+| Layer | What lands there |
+|---|---|
+| Constitution | Cross-task, long-term stable, should apply on every run |
+| A skill | One workflow's execution skeleton, decision points, defaults, or failure-specific guardrails |
+| A command | An entry point's routing, parameters, order, or handoff |
+| Conventions | Stable definitions: field semantics, formats, layer boundaries |
+| Plans | Cross-file decisions that will be continued or handed off, but aren't mature enough to change source yet |
+| Scripts / hooks / validators | Zero-exception, easy-to-miss, deterministic-guarantee constraints — wired into the doctor script and pre-commit so the check runs itself |
+
+## Output
+
+Propose first; touch nothing long-term unless the operator has already made this round's task a workflow fix.
+
+If the landing spot is an existing source, read the current passage first, then propose an **absorptive rewrite** — not "append to section X", and not a new rule stacked on the pile. Present it as before → after:
+
+```md
+Verdict: don't write back / park as plan / write back to source
+
+Worth writing back:
+| learning | evidence | landing spot | minimal edit | acceptance check |
+|---|---|---|---|---|
+
+Absorptive rewrite draft (when editing an existing source):
+- Before: {the current passage}
+- After: {the integrated rewrite}
+- Check: {what of Before survives, what new insight was absorbed, why After reads clearer and drifts less}
+
+Not worth writing back:
+| learning | reason |
+|---|---|
+
+Needs operator confirmation:
+- I recommend changing ... because ...
+- On "yes", I will touch only: ...
+```
+
+## After the write-back
+
+Land only after confirmation. Then re-run the before/after self-check: *After* should keep *Before*'s living intent, delete duplicated or obsolete guardrail fragments, absorb the new insight — and not merge two orthogonal rules into a conflict. If *After* is merely longer, go back and rewrite before closing.
+
+If authored skill or command sources changed, run the mirror sync and commit source plus mirror together, narrowly scoped to this round's paths.

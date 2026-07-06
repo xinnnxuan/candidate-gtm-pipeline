@@ -1,0 +1,3 @@
+# The local denylist carries the private terms the gate screens for.
+# It must never be committed — a published denylist would itself be the leak.
+.denylist.local

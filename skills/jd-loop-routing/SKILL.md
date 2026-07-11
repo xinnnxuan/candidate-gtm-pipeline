@@ -1,16 +1,30 @@
 ---
 name: jd-loop-routing
 description: >
-  Before any resume work, produce a thin, role-only routing brief from the job
-  description and stakeholder calibration notes. Defines role_read, role loop,
-  correct pool, frontstage direction, wrong pool, must-prove, cannot-borrow,
-  front-door / high-risk nouns, a transferable-capability map, and the role's
-  AI relevance — while deliberately never reading candidate evidence.
+  Reads the job the way its hiring manager will — which pool this role gets
+  filed under, what any candidate must prove, and what may never be claimed —
+  and writes that down as a binding brief before the resume is ever opened.
 ---
 
 # JD Loop Routing
 
 > **Public edition.** Adapted from a production system. Re-authored in English with paths generalized; the field contract, the evidence-blinding rule, and the claim-ceiling design are the production ones.
+
+## The judgment, in one screen
+
+**What this skill prevents:** tailoring a resume for the wrong job. Before the resume is ever opened, it decides which shelf the hiring manager will file this role on — and writes down what may not be claimed.
+
+**The calls it hardcodes** — each written down because improvising it went wrong:
+
+- **The router never sees the resume.** An AI that has already seen the candidate's highlights bends the role reading toward them — finding seats for the evidence instead of reading the job. Blinding keeps "who are they hiring" and "what can I claim" two separate, honest questions.
+- **The claim ceiling is set before drafting exists.** `cannot_borrow` is written while no one is tempted — a property of the role, not a critique of the candidate. Downstream, the exit gate enforces it before a single bullet is written.
+- **A recruiter never decides the lane.** Recruiters are routing owners: their title cluster tells you who moves the application, not what the job is. Role truth comes from the people who do or consume the work.
+- **An adjacent org corroborates — it never becomes a peer.** Finding the company's analytics org proves the lane exists, not how this team works. The missing peer is recorded under `known_unknowns`, not bluffed over.
+- **"The JD doesn't mention AI" never becomes "AI is irrelevant."** Silence routes AI evidence to the support tier — bound to work quality, neither hidden nor headlined.
+
+**One call, worked** (from [the sample run](../../examples/routing-brief-sample.md) — a fictional JD put through the production rules): a lifecycle-marketing-analyst post asks for SQL, Looker, and "comfort with AI tools." The bright-but-wrong read is tool-led — *generic data analyst / data-engineer-lite*. The router files that under `wrong_pool` with the reason attached: this team is buying **campaign-decision support, not dashboard throughput**, and the tool-led read costs the interview because the HM can't picture the candidate in the monthly readout. That one call redirects the entire resume's first cut — and `attribution`, `churn model`, `campaign ownership` go into the ceiling before any bullet is tempted to borrow them.
+
+*Everything below is the working contract an AI session actually loads, field by field. To audit it instead of reading it: [the sample brief](../../examples/routing-brief-sample.md) is this contract, filled.*
 
 ## Purpose
 

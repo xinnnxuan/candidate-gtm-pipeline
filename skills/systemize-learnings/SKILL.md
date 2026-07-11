@@ -1,17 +1,31 @@
 ---
 name: systemize-learnings
 description: >
-  At the close of a work session, triage what the back-and-forth actually
-  taught: which corrections deserve to be written back as repeatable system
-  improvements, which are single-case details, and which should rest as a plan
-  until they mature. Proposes the landing spot, the minimal edit, and the
-  acceptance check. Default is to propose only — never to edit long-term
-  sources directly.
+  The close-out triage that decides whether a session's lessons deserve to
+  become system rules. Its defining bias: the default answer is DON'T write —
+  most lessons are single-case noise, and a system that absorbs every
+  session's opinions stops being trustworthy.
 ---
 
 # Systemize Learnings
 
 > **Public edition.** Adapted from a production system. This is the authority definition of the write-back triage framework; the retrospective command (see `retrospective.command.md` beside this file) routes into it but never restates it.
+
+## The judgment, in one screen
+
+**What this skill prevents:** rule sediment. A system that writes a new rule after every session gets longer, more contradictory, and less trusted — until nobody, human or AI, actually follows it.
+
+**The calls it hardcodes:**
+
+- **The default verdict is DON'T write.** "Nothing should be written back this round" is a successful output, not an empty one. A learning must *earn* long-term status.
+- **Four questions gate every candidate.** Does it recur? Is it already covered? What does re-hitting it cost? Does the minimal edit make the system *shorter or stabler* — or just longer? High-confidence pass on all four, or it stays in the conversation.
+- **Zero-exception constraints become machines, not prose.** If a rule must never be missed, it belongs in a hook or validator — prose promises drift; validators don't.
+- **Write-backs absorb, they don't append.** Every edit is presented as before → after, and if After is merely longer than Before, it goes back for another pass.
+- **An execution miss is not a source gap.** If the rule already exists and the session simply failed to follow it, writing it a second time just teaches the system to say everything twice.
+
+**One run, scored** ([the sample triage](../../examples/write-back-triage.md)): four candidate learnings enter — a missing fallback rule, a caching idea, a mid-session slip, a 12-keyword lookup table. **One survives** — the fallback rule, because it passes all four questions: it recurs, it isn't yet covered, re-hitting it silently costs an interview, and it lands as an absorptive rewrite *inside* an existing gate rather than a new rule bolted on. The cache parks as a plan; the slip is rejected because the rule already exists; the lookup table is rejected because it would pull routing back toward title-matching — the exact failure the routing skill exists to prevent. One-in-four is the skill working, not failing.
+
+*The contract below is the authority definition; the [retrospective command](retrospective.command.md) routes into it and restates none of it.*
 
 ## Intent
 

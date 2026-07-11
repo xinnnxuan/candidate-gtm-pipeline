@@ -40,7 +40,7 @@ Full walk-through with a real iteration: [docs/the-loop.md](docs/the-loop.md)
 
 **This is not:**
 
-- a framework or template to install — the skills encode *my* judgment; the transferable part is the method for encoding yours;
+- a framework or template to install — the skills encode *my* judgment; the transferable part is the method for encoding yours ([what that transfer looks like on a team](docs/from-one-operator-to-a-team.md));
 - a prompt library — the value is in field contracts, boundaries, and gates, not incantations;
 - an autonomous job-applying bot — nothing is sent, claimed, or written back without a human decision (see [§6](#6--what-im-not-claiming)).
 
@@ -81,9 +81,9 @@ Five working documents, re-authored as public editions, chosen because each demo
 | 3a | [`skills/resume-tailor/EXCERPT.md`](skills/resume-tailor/EXCERPT.md) | **Become-the-reader discipline.** Three phases where the hiring manager's read is built *before* candidate material opens; AI visibility tiered by a three-question test. |
 | 3b | [`skills/resume-tailor/graders.md`](skills/resume-tailor/graders.md) | **Gates that point, never re-edit.** A 7-check exit gate forbidden from inventing standards at the door. |
 
-Supporting docs: [the pipeline](docs/pipeline.md) · [the loop](docs/the-loop.md) · [evidence ledger](docs/evidence-ledger.md) (dated snapshots, so numbers can't drift silently) · [how this repo was sanitized](docs/how-this-repo-was-sanitized.md) (a meta-exhibit: the publishing process run under the same governance).
+Supporting docs: [the pipeline](docs/pipeline.md) · [the loop](docs/the-loop.md) · [from one operator to a team](docs/from-one-operator-to-a-team.md) (the reader's next question — *so what would you do on my team?* — answered in the repo's own claim register) · [evidence ledger](docs/evidence-ledger.md) (dated snapshots, so numbers can't drift silently) · [how this repo was sanitized](docs/how-this-repo-was-sanitized.md) (a meta-exhibit: the publishing process run under the same governance).
 
-Checkable artifacts: [routing brief on a fictional JD](examples/routing-brief-sample.md) · [a resume line failing the exit gate, and the fix](examples/resume-draft-fail-and-fix.md) · [failure → guardrail log](examples/failure-guardrail-log.md) · [write-back triage run](examples/write-back-triage.md).
+Checkable artifacts: [routing brief on a fictional JD](examples/routing-brief-sample.md) · [a resume line failing the exit gate, and the fix](examples/resume-draft-fail-and-fix.md) · [failure → guardrail log](examples/failure-guardrail-log.md) · [write-back triage run](examples/write-back-triage.md) · [an annotated session — the method in motion](examples/annotated-session.md).
 
 The five exhibits are a curated sample, not the whole team. The full working roster — real module names, stage by stage, each tied to the judgment it owns — is mapped in [the pipeline, staffed](docs/pipeline.md#the-pipeline-staffed).
 
@@ -131,7 +131,7 @@ Not claimed: that the operator stopped making mistakes. Claimed: **mistakes stop
 |---|---|---|
 | **Meet the candidate** | positioning, proof strip, the working narrative | [johannafan.com](https://johannafan.com/) |
 | **Read the system** | this repository — the method, opened up | you are here |
-| **See it run** | the live pipeline this repo describes | [johannafan.com/#workflow](https://johannafan.com/#workflow) |
+| **See it run** | the live pipeline this repo describes | [johannafan.com/#overview](https://johannafan.com/#overview) |
 
 ---
 

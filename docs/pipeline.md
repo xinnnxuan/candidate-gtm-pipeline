@@ -58,7 +58,7 @@ Nine nodes, run by one person — because each node's judgment is written down a
 | 8 · Release | `apply-mode` *(skill)* | browser-assisted form work that always stops before Submit — the click is human |
 | 8 · Release | `apply-check` *(skill)* | final form check against one fixed personal-data source of truth |
 | 9 · Status & write-back | `update-status` *(command)* | one entry point for state changes — no hand-edited fields |
-| 9 · Status & write-back | `email-status-sync` *(skill)* | inbox → classified signals → dry-run → confirmed write-back; read-only on the mailbox itself |
+| 9 · Status & write-back | `email-status-sync` *(skill)* | inbox → classified signals → dry-run → confirmed write-back; read-only on the mailbox itself ([seen running](../examples/annotated-session.md)) |
 | 9 · Status & write-back | `linkedin-networking-sync` *(skill)* | sent / pending / accepted / replied as a ledger, not a memory |
 | 9 · Status & write-back | `linkedin-first-connect` / `linkedin-connect` *(skills)* | outreach segmented by reader — recruiter, hiring manager, peer — drafted for review, never auto-sent |
 | 9 · Status & write-back | [`systemize-learnings`](../skills/systemize-learnings/SKILL.md) *(skill · exhibit 2a)* | which lessons earn their way into long-term rules — the default answer is *don't* |

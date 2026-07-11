@@ -8,7 +8,7 @@
 
 AI runs the volume and supports research, drafting, and QA. I own the criteria, claims, release decisions, and write-back. The result is not an AI job-search bot; it is a running Candidate Go-to-Market case whose operating method can be inspected field by field.
 
-**Don't take the Marketing framing on faith — trace it.** Start with [the public Marketing-reframe run](examples/marketing-reframe-run.md), which maps each live mechanism to a Marketing / GTM capability and its evidence boundary. Then audit [a routing brief produced from a fictional job post](examples/routing-brief-sample.md) against the [skill contract that generated it](skills/jd-loop-routing/SKILL.md).
+**Don't take the Marketing framing on faith — trace it.** Start with [the public Marketing-reframe run](examples/marketing-reframe-run.md), which maps each live mechanism to a Marketing / GTM capability and its evidence boundary. Then audit [a routing brief produced from a fictional job post](examples/routing-brief-sample.md) against the [skill contract that generated it](skills/jd-loop-routing/SKILL.md). Even the language here is a measured decision: [how this system reads what hiring managers are buying](docs/reading-the-buyer.md).
 
 ![Market Release Workflow — each application runs like a candidate market release, every gate a human judgment call](assets/market-release-workflow.png)
 
@@ -106,7 +106,7 @@ Six working documents, re-authored as public editions, chosen because each makes
 | 3b | [`skills/resume-tailor/graders.md`](skills/resume-tailor/graders.md) | **Conversion QA.** A 7-check release gate asks whether the right reader sees relevant, defensible value — and points back to the owning rule when they do not. |
 | 4 | [`skills/marketing-reframe/SKILL.md`](skills/marketing-reframe/SKILL.md) | **Capability translation with evidence levels.** A true mechanism earns Marketing language only after buyer, judgment, next action, and claim boundary are explicit. |
 
-Supporting docs: [the pipeline](docs/pipeline.md) · [the loop](docs/the-loop.md) · [from one operator to a team](docs/from-one-operator-to-a-team.md) (the reader's next question — *so what would you do on my team?* — answered in the repo's own claim register) · [evidence ledger](docs/evidence-ledger.md) (dated snapshots, so numbers can't drift silently) · [how this repo was sanitized](docs/how-this-repo-was-sanitized.md) (a meta-exhibit: the publishing process run under the same governance).
+Supporting docs: [the pipeline](docs/pipeline.md) · [the loop](docs/the-loop.md) · [reading the buyer](docs/reading-the-buyer.md) (the demand-side calibration that decides what language leads) · [from one operator to a team](docs/from-one-operator-to-a-team.md) (the reader's next question — *so what would you do on my team?* — answered in the repo's own claim register) · [evidence ledger](docs/evidence-ledger.md) (dated snapshots, so numbers can't drift silently) · [how this repo was sanitized](docs/how-this-repo-was-sanitized.md) (a meta-exhibit: the publishing process run under the same governance).
 
 Checkable artifacts: [Candidate GTM → Marketing capability map](examples/marketing-reframe-run.md) · [routing brief on a fictional JD](examples/routing-brief-sample.md) · [a resume line failing the exit gate, and the fix](examples/resume-draft-fail-and-fix.md) · [failure → guardrail log](examples/failure-guardrail-log.md) · [write-back triage run](examples/write-back-triage.md) · [an annotated lifecycle session](examples/annotated-session.md).
 
@@ -142,7 +142,7 @@ Not claimed: that the operator stopped making mistakes. Claimed: **a confirmed m
 | Figure | What it means | Its boundary |
 |---|---|---|
 | **20K+** | market signals screened through qualification rules | AI did the volume under a rubric I defined and reviewed. I did not read twenty thousand job descriptions, and a screened signal is not buyer intent. |
-| **6** | repeatable Candidate GTM gates from qualification to learning write-back | Gates are human judgment calls the system *routes*, not funnel stages it automates away. |
+| **6** | repeatable Candidate GTM gates from qualification to learning write-back | Gates are human judgment calls the system *routes*, not funnel stages it automates away — [named one by one](docs/pipeline.md#the-six-gates). |
 | **1** | closed loop connecting market response, positioning, proof, and next-cycle learning | The loop is the product; applications and outreach are its live market runs. |
 | **dozens, deliberately pruned** | versioned judgment skills + command entry points under governance | Exact dated counts live in the [evidence ledger](docs/evidence-ledger.md) — they move by design: skills get retired when a sharper one absorbs them, and more isn't better. |
 | **months of daily iteration** | how the guardrails accumulated | Deliberately not a commit count: volume of iteration isn't quality of iteration. The quality mechanism is the [guardrail log](examples/failure-guardrail-log.md). |

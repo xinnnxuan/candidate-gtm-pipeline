@@ -44,6 +44,21 @@ This is an interpretation layer over the real runtime sequence, not a claim that
 
 The worked capability and evidence mapping is public in [the Marketing-reframe run](../examples/marketing-reframe-run.md).
 
+## The six gates
+
+The nine nodes above are where work happens; the six gates are where a human decides. The counts differ on purpose: a node is a stage of the pipeline, a gate is a judgment call that refuses to be delegated. Each gate is a marketing decision — and each carries the same names as the cards in the operating picture (the earlier visual showed seven; outreach and follow-up merged into one).
+
+| # | Gate | The human call | Where it sits |
+|---|---|---|---|
+| 1 | **Find the right role** | which corners of the live market deserve attention this cycle — the sweep rubric and every exception to it | stages 1–2 |
+| 2 | **Decide the fit** | does this opportunity earn a full release — the slate pick is never delegated, and admission is what creates the tracker row | stage 3 |
+| 3 | **Tailor the resume** | does the translated page speak this reader's language without borrowing scope — approved against a claim ceiling written back when the resume was still closed | stages 6–7, fed by the resume-closed calibration of stages 4–5 |
+| 4 | **Submit** | the release click itself — browser-assisted form work always stops before Submit | stage 8 |
+| 5 | **Outreach & follow up** | every message is drafted for review and sent by a human, then logged as a ledger instead of a memory | stage 9 — the diagram shows the state it writes; the outreach modules themselves are staffed in the roster below |
+| 6 | **Review the result** | what the response actually teaches — the state ruling (rejected is not role-closed) and which lessons earn a rule change | stage 9 |
+
+In Marketing terms: qualification, segment investment, positioning sign-off, launch, touchpoint execution, and loss learning. AI prepares every one of these decisions and executes the pre-authorized write-backs they produce; the decisions themselves stay human.
+
 ## The pipeline, staffed
 
 Nine nodes, run by one person — because each node's judgment is written down as a named, versioned module. Skills own a judgment; commands are thin entry points that route into them (the separation shown in [exhibit 2b](../skills/systemize-learnings/retrospective.command.md)). These are real module names from the production system as of 2026-07-11, each tied to the one decision it improves:

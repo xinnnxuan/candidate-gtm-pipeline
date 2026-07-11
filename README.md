@@ -4,7 +4,7 @@
 
 **I turn messy market signals into decisions a team can trust — AI runs the volume, judgment stays human.**
 
-This repository is the proof, opened up: my own job search runs as a governed AI pipeline — 40 written skills screening 20K+ job-market signals under rules I defined and reviewed, where every claim ships with its own boundary. This public repo is a curated case study of that private, running system.
+This repository is the proof, opened up: my own job search runs as a governed AI pipeline — dozens of versioned judgment skills screening 20K+ job-market signals under rules I defined and reviewed, where every claim ships with its own boundary. This public repo is a curated case study of that private, running system.
 
 **Don't take the pitch — audit an artifact.** Start with [a routing brief produced by a published skill, run on a fictional job post](examples/routing-brief-sample.md), then check every field against the [skill contract that generated it](skills/jd-loop-routing/SKILL.md).
 
@@ -81,9 +81,11 @@ Five working documents, re-authored as public editions, chosen because each demo
 | 3a | [`skills/resume-tailor/EXCERPT.md`](skills/resume-tailor/EXCERPT.md) | **Become-the-reader discipline.** Three phases where the hiring manager's read is built *before* candidate material opens; AI visibility tiered by a three-question test. |
 | 3b | [`skills/resume-tailor/graders.md`](skills/resume-tailor/graders.md) | **Gates that point, never re-edit.** A 7-check exit gate forbidden from inventing standards at the door. |
 
-Supporting docs: [the pipeline](docs/pipeline.md) · [the loop](docs/the-loop.md) · [how this repo was sanitized](docs/how-this-repo-was-sanitized.md) (a meta-exhibit: the publishing process run under the same governance).
+Supporting docs: [the pipeline](docs/pipeline.md) · [the loop](docs/the-loop.md) · [evidence ledger](docs/evidence-ledger.md) (dated snapshots, so numbers can't drift silently) · [how this repo was sanitized](docs/how-this-repo-was-sanitized.md) (a meta-exhibit: the publishing process run under the same governance).
 
 Checkable artifacts: [routing brief on a fictional JD](examples/routing-brief-sample.md) · [a resume line failing the exit gate, and the fix](examples/resume-draft-fail-and-fix.md) · [failure → guardrail log](examples/failure-guardrail-log.md) · [write-back triage run](examples/write-back-triage.md).
+
+The five exhibits are a curated sample, not the whole team. The full working roster — real module names, stage by stage, each tied to the judgment it owns — is mapped in [the pipeline, staffed](docs/pipeline.md#the-pipeline-staffed).
 
 ---
 
@@ -103,7 +105,7 @@ Not claimed: that the operator stopped making mistakes. Claimed: **mistakes stop
 
 - **Not a software-engineering portfolio.** The skills are written in natural language. The engineering here is *decision* engineering; the code parts (hooks, validators, sync) are deliberately boring.
 - **Not automation of outreach.** Outreach is manual and research-assisted; the system governs *whether* and *what* — it never sends. No message leaves without a human writing the final call.
-- **Not autonomous claiming.** Three decisions never move to AI: what I claim, what I send, what gets written back.
+- **Not autonomous claiming.** Three calls stay human: what I claim, what I send, and what counts as true state. AI does execute deterministic, pre-authorized write-backs under review gates — but write authority, conflict handling, and every outbound move remain the operator's.
 - **Not platform ownership.** Exposure to CRM and marketing tooling in this system is workflow-level; I claim no production administration of anyone's stack.
 - **Not a finished victory lap.** The system's own market test is running now. What's exhibited is the method's discipline, not a triumphant outcome — and that honesty is itself the discipline on display.
 
@@ -116,7 +118,7 @@ Not claimed: that the operator stopped making mistakes. Claimed: **mistakes stop
 | **20K+** | job-market signals screened with review rules | AI did the volume under a rubric I defined and reviewed. I did not read twenty thousand job descriptions — that's the point. |
 | **6** | repeatable judgment gates from role selection to learning write-back | Gates are human judgment calls the system *routes*, not steps it automates away. |
 | **1** | loop connecting market feedback, proof, and learning | The loop is the product; applications are its test runs. |
-| **40 / 26** | written skills / command entry points under governance | Counts of versioned judgment modules — not app features, and more isn't better; several have been retired on purpose. |
+| **dozens, deliberately pruned** | versioned judgment skills + command entry points under governance | Exact dated counts live in the [evidence ledger](docs/evidence-ledger.md) — they move by design: skills get retired when a sharper one absorbs them, and more isn't better. |
 | **months of daily iteration** | how the guardrails accumulated | Deliberately not a commit count: volume of iteration isn't quality of iteration. The quality mechanism is the [guardrail log](examples/failure-guardrail-log.md). |
 
 ![Quality over quantity — every application runs as a signal cycle](assets/quality-over-quantity-roadmap.png)

@@ -1,6 +1,6 @@
 # Graders — the 7-check exit gate
 
-> **Public edition.** Adapted from a production system. This file is exhibit **3b**: the final gate a tailored resume must pass before it ships. Design note: the grader **checks and points — it never restates rules and never re-edits**. Authority for each rule lives in the tailoring skill (`EXCERPT.md` beside this file shows its core) and the section-writing rules; a fail routes back to the owning definition, because a gate that invents standards at the door becomes a second, drifting rulebook.
+> **Public edition.** Adapted from a production system. This file is exhibit **3b**: conversion QA before a candidate-market release. It asks whether the intended buyer sees relevant, defensible value quickly enough to take the next step. Design note: the grader **checks and points — it never restates rules and never re-edits**. Authority for each rule lives in the tailoring skill (`EXCERPT.md` beside this file shows its core) and the section-writing rules; a fail routes back to the owning definition, because a gate that invents standards at the door becomes a second, drifting rulebook.
 
 ## 1. Routing accuracy
 

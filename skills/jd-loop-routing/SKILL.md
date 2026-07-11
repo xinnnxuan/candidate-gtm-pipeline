@@ -12,11 +12,11 @@ description: >
 
 ## The judgment, in one screen
 
-**What this skill prevents:** tailoring a resume for the wrong job. Before the resume is ever opened, it decides which shelf the hiring manager will file this role on — and writes down what may not be claimed.
+**What this skill prevents:** spending positioning effort on the wrong market read — then asking the wrong buyer to value the wrong proof. Before the resume is ever opened, it qualifies the role, identifies the decision audience and candidate segment, and writes down what may not be claimed.
 
 **The calls it hardcodes** — each written down because improvising it went wrong:
 
-- **The router never sees the resume.** An AI that has already seen the candidate's highlights bends the role reading toward them — finding seats for the evidence instead of reading the job. Blinding keeps "who are they hiring" and "what can I claim" two separate, honest questions.
+- **Market and audience come before message.** The router never sees the resume. An AI that has already seen the candidate's highlights bends demand toward supply — finding seats for the evidence instead of reading the market. Blinding keeps "who are they hiring" and "what can I claim" two separate, honest questions.
 - **The claim ceiling is set before drafting exists.** `cannot_borrow` is written while no one is tempted — a property of the role, not a critique of the candidate. Downstream, the exit gate enforces it before a single bullet is written.
 - **A recruiter never decides the lane.** Recruiters are routing owners: their title cluster tells you who moves the application, not what the job is. Role truth comes from the people who do or consume the work.
 - **An adjacent org corroborates — it never becomes a peer.** Finding the company's analytics org proves the lane exists, not how this team works. The missing peer is recorded under `known_unknowns`, not bluffed over.

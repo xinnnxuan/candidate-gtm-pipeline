@@ -1,6 +1,6 @@
 # /retrospective — the close-out entry point
 
-> **Public edition.** Adapted from a production system. Shown here as exhibit **2b**: how a command and a skill divide power. The command owns *routing*; the skill (`SKILL.md` beside this file) owns *the framework*. The command deliberately never restates the framework — one authority, one place.
+> **Public edition.** Adapted from a production system. Shown here as exhibit **2b**: the governed entry point to the Candidate GTM learning loop. The command owns *routing*; the skill (`SKILL.md` beside this file) owns the decision framework that separates recurring signal from one-case noise. The command deliberately never restates it — one authority, one place.
 
 The single system-learning entry at conversation close: judge what this round's corrections deserve to become, optionally adding a full version retrospective and an upstream/downstream consistency pass. The judgment framework, landing-spot table, output format, and write-back discipline are authoritatively defined in the skill — this command adds routing plus two extra steps for full-review mode, nothing more.
 

@@ -4,15 +4,15 @@
 
 ## The judgment, in one screen
 
-**What this skill prevents:** the fluent overclaim — the resume line that reads perfectly, interviews terribly, and wasn't even a lie. Fluent drift toward the JD's vocabulary is the default failure mode of every tailoring session, human or AI; this skill exists to catch it structurally instead of luckily.
+**What this skill prevents:** positioning that earns attention by promising value the evidence cannot deliver. The fluent overclaim reads perfectly, interviews terribly, and often was not intended as a lie. It is a conversion and trust failure: the strongest hook becomes the first claim to collapse under buyer scrutiny.
 
 **The calls it hardcodes:**
 
-- **Become the hiring manager first.** Until the HM read is stable, every candidate file stays closed — the same blinding principle as the routing stage, applied one step later.
-- **Translate from the bottom layer.** True story → underlying capability → this JD's work objects. Never "which keyword does this JD sentence want."
+- **Become the buyer first.** Until the hiring manager's problem, decision criteria, and next-step reason are stable, every candidate file stays closed — the same market-before-message principle as the routing stage, applied one step later.
+- **Build the value proposition from the bottom layer.** True story → underlying capability → this JD's work objects and beneficiary. Never "which keyword does this JD sentence want."
 - **Structural gaps get named, not worded over.** Evidence that would break the claim ceiling becomes a lowered claim or a named gap — wording never patches a structural hole.
 - **AI is a working method, never the headline identity.** Every AI line passes a three-question test — which work object gets steadier? what's the defensibility mechanism? what handoff-ready output? — or it drops a visibility tier.
-- **Nothing ships without the exit sequence.** A reframe check against mature references, a cold read by a clean agent that inherited none of this session's rationalizations, a 7-check gate that points but never re-edits, and write-back in the same turn.
+- **Nothing ships without conversion QA.** A reframe check against mature references, a cold read by a clean agent that inherited none of this session's rationalizations, a 7-check gate that points but never re-edits, and write-back in the same turn.
 
 **One line, caught** ([the worked example](../../examples/resume-draft-fail-and-fix.md)): a draft bullet reads *"Led lifecycle campaign analytics … driving retention optimization."* Every noun is in the JD — which is exactly why it goes to the gate. The body proves *supported* readouts for two campaigns and one cohort view used twice; "led" borrows scope the ceiling forbids, and the first interview probe would collapse it. The fix re-translates the same true story under the ceiling — *supported, built, checked* — and the strongest defensible fact (every AI-assisted output checked against source records) becomes the visible one. Same work, same honesty; the difference is a written ceiling, and a gate that checks it at the door.
 

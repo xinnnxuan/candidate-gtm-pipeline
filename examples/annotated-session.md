@@ -1,6 +1,6 @@
 # An annotated session — the method in motion
 
-> **Checkable artifact.** Re-authored from a real close-out session in the production system (which runs in Traditional Chinese): translated, compressed, and generalized — companies and message text are stand-ins; the module name, the tier rules, and every decision beat are the production ones. The module shown, `email-status-sync`, is stage 9 in [the pipeline roster](../docs/pipeline.md#the-pipeline-staffed). The other four artifacts in this folder show what the system *produces*. This one shows the system *running*: a skill invoked, a gate intercepting a bad write, a human ruling on the one thing that deserved a human, and state written back in the same turn.
+> **Checkable artifact.** Re-authored from a real lifecycle close-out in the production system (which runs in Traditional Chinese): translated, compressed, and generalized — companies and message text are stand-ins; the module name, tier rules, and every decision beat are the production ones. The module shown, `email-status-sync`, is stage 9 in [the Candidate GTM pipeline](../docs/pipeline.md#the-pipeline-staffed). The other artifacts show decisions and outputs; this one shows CRM state and measurement honesty in motion: a gate prevents a false conversion-state write, a human separates *rejected* from *role closed*, and verified state lands in the same turn.
 
 ---
 
@@ -33,7 +33,7 @@
 >
 > **System:** Ruled. Closing the earlier application as **role-closed** (not rejected), outcome date taken from the message's own date. Your second application at that company stays open, untouched.
 
-**What to notice:** the ruling is a judgment, not a rubber stamp — two judgments, in fact. *Identity*: which of two applications this message ends — the human had thread context no matching score could reach. *Meaning*: rejected versus role-closed — a distinction that looks like bookkeeping and is actually measurement honesty. Downstream, this system learns from its losses ("what about my case failed to convert?"); a pulled search says nothing about the candidate, and filing it as a rejection would teach the next cycle a lesson the market never taught. The gate's job was to shrink the session's decisions down to the one that needed exactly this: a human with context, ruling once, on a well-shaped question with the evidence attached.
+**What to notice:** the ruling is a judgment, not a rubber stamp — two judgments, in fact. *Identity*: which of two applications this message ends — the human had thread context no matching score could reach. *Meaning*: rejected versus role-closed — a distinction that looks like bookkeeping and is actually funnel measurement honesty. A pulled search says nothing about candidate-market fit; filing it as a rejection would corrupt the loss denominator and teach the next cycle a lesson the market never taught. The gate's job was to shrink the session's decisions down to the one that needed exactly this: a human with context, ruling once, on a well-shaped question with the evidence attached.
 
 ## Beat 4 — write-back, same turn
 

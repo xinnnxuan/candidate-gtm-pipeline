@@ -31,4 +31,4 @@ The private system contains exactly what a job-search system must contain: perso
 
 ## Why this page exists
 
-Because the discipline it documents is the same one the system applies to resumes and reports: **every claim ships with its own boundary, and anything irreversible gets a machine gate, not a good intention.** Publishing is an irreversible, outward-facing action — so it got the full treatment.
+Because publishing a portfolio is itself a market release. The message has an audience, the artifacts make claims, the links create handoffs, and a privacy failure cannot be recalled from every reader. The same discipline applies to a resume, campaign readout, or public case study: **every claim ships with its own boundary, and anything irreversible gets a machine gate, not a good intention.**

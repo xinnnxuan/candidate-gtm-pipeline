@@ -4,6 +4,8 @@
 >
 > In production, this file is the single governance document loaded into **every** AI session. Nothing below is aspirational: every rule here exists because a session without it produced a worse decision.
 
+**Marketing / GTM read:** this is the operating charter behind the Candidate Go-to-Market case. It fixes the order of market qualification, audience / pool diagnosis, positioning, release, state, and learning — so AI can support the motion without quietly redefining the target, claim, or conversion state.
+
 The constitution only holds rules that are cross-task, long-term stable, and should apply on every run. Task details, field specs, exception flows, and step-by-step procedures live in skills, commands, and conventions — never here.
 
 ---

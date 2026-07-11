@@ -2,19 +2,30 @@
 
 > **Public edition.** The solo system described in present tense here is the one running today — the same system the rest of this repository exhibits and audits. The team-scale design is adapted from a private architecture plan (2026-07-10) and carries exactly that status: **designed, and being proven on live data now — not deployed.** Every claim below keeps that register. One misread to rule out up front: nothing on this page says I have led or enabled a team with this method. That claim would be the wrong kind of proof anyway — what transfers is a method you can audit, not a war story you'd have to take on faith.
 
-Everything else in this repository shows the method working for one operator. A fair reader finishes it with one question left: **so what would you actually do inside my team?**
+Everything else in this repository shows one operator running a Candidate Go-to-Market motion: qualify the market, map the decision audience, position defensible value, keep lifecycle state clean, and turn response into the next decision. A fair reader finishes it with one question left: **so what would you actually do inside my Marketing / GTM team?**
 
 The compressed answer:
 
-> I've already run this pattern solo: a governed pipeline where AI reads one shared context before it touches anything. Walking into your team, the same move is a shared method your team's AI reads before it talks to your HubSpot — I've designed that gateway, and I'm proving it on live data now.
+> I've already run this pattern solo: a Candidate GTM pipeline where market signals become qualified attention, buyer-specific proof, governed touchpoints, clean CRM state, and next-cycle learning. Walking into your team, I would start with the same operating question — which recurring Marketing judgment should become shared, reviewable, and safe for AI to assist?
 
 (HubSpot is the concrete case because that's where my own live proving ground runs; the discipline is CRM-agnostic. And *proving* is a precise word here — the status paragraph below says exactly what runs today and what doesn't.)
 
-The rest of this page unpacks that sentence — what lands on day one, what gets written in the first weeks, and what stands between AI and the CRM — under the same claim boundaries as the rest of the repo.
+The rest of this page unpacks that sentence — what a Marketing / GTM team gets, what lands on day one, what gets written in the first weeks, and what stands between AI and the CRM — under the same claim boundaries as the rest of the repo.
+
+## What a Marketing / GTM team gets
+
+| Team friction | Transferable move | Better downstream decision |
+|---|---|---|
+| Market, customer, campaign, and account signals arrive with different context and confidence | One source and evidence boundary per readout | The team knows which signal is actionable and which is only a hypothesis |
+| Qualification, audience, and messaging judgments are re-decided in private prompts | Write the recurring judgment into a reviewable skill with an owner | Targeting and message development start from the same criteria |
+| Campaign or lifecycle state means different things across tools and people | Promote reviewed state through one governed gateway | Follow-up, reporting, and handoff read the same operational truth |
+| Reports describe results but do not change the next cycle | Separate observed fact from interpretation, then name the next decision | Outcomes change targeting, proof, message, resource, or rule instead of becoming dashboard history |
+
+This is the transfer claim: the same judgment shapes, not the same job-search vocabulary or a prebuilt playbook.
 
 ## What changes at team scale — and what doesn't
 
-Solo, three governance jobs are easy to miss because one person quietly holds all of them: the operator *is* the shared context, *is* the review gate, *is* the write authority. A team can't inherit those by osmosis. Either they become explicit, or they stop existing — and "AI adoption" decays into ten people running ten private prompts against the same CRM, each session quietly re-deciding definitions the team thought were settled.
+Solo, three governance jobs are easy to miss because one person quietly holds all of them: the operator *is* the shared market context, *is* the review gate, *is* the write authority. A team cannot inherit those by osmosis. Either they become explicit, or Marketing work decays into private audience definitions, inconsistent campaign language, conflicting readouts, and ten AI sessions quietly re-deciding what the team thought was settled.
 
 So the transfer is not "install my system." It is making three moves explicit — the same three this repository demonstrates end to end:
 
@@ -29,7 +40,7 @@ What does *not* transfer: my skills. [§2 of the README](../README.md#2--what-th
 Before any AI session touches team work, it reads one governance file. Mine is [exhibited here](../constitution/CONSTITUTION.md); a team's version answers the same four questions in the team's own vocabulary:
 
 - what this team is doing, and the order in which judgments get made;
-- what words mean — the definitions that must not drift: what counts as qualified, what "closed-lost" may be used to say, which fields are someone's word and which are computed;
+- what words mean — the definitions that must not drift: target audience, qualification, campaign, conversion, loss reason, what "closed-lost" may be used to say, which fields are someone's word and which are computed;
 - what **done** means: artifact landed *and* state written back *and* the next person can continue — in the same turn;
 - what may never be claimed or written without a named human.
 
@@ -46,7 +57,7 @@ Day one's deliverable is deliberately modest: that file, drafted from listening,
 - **Codify it in the team's language.** Plain prose the owner can read, veto, and amend — versioned like code, with a named owner and explicit boundaries: what it may read, what it may claim, when it must stop and ask.
 - **Tighten on misses.** When a run gets it wrong, the fix lands in the rule, not just the output — misses become named guardrails, the way [this system's real misses did](../examples/failure-guardrail-log.md).
 
-The success test is not "the team uses AI now." It is that the judgment survives its owner's vacation, the new hire's first week reads like the old hand's, and when the judgment turns out wrong, there is exactly one written place to fix it.
+The success test is not "the team uses AI now." It is that a qualification rule, audience read, campaign definition, or weekly decision readout survives its owner's vacation; a new hire can see why it exists; and when the judgment turns out wrong, there is exactly one written place to fix it.
 
 ## Before AI touches the CRM — one gateway
 
@@ -89,6 +100,7 @@ If the ladder looks abstract, it isn't — it already runs, solo, at skill level
 
 - **Not team history.** I have not run this method with a team. This page is a design with a live proving ground, written inside a repo whose whole discipline is that claims carry their own boundaries — which is exactly why I can say that plainly and expect the rest to stand.
 - **Not your stack's administrator.** Same boundary as [§6 of the README](../README.md#6--what-im-not-claiming): my CRM and marketing-tooling exposure is workflow-level, on my own live portal. No one's production instance is being claimed here.
+- **Not your campaign or revenue owner.** The transferable proof is upstream Marketing judgment, shared context, state discipline, measurement honesty, and learning-loop design — not a claim to past ownership of enterprise campaigns, attribution, lifecycle, or revenue.
 - **Not a rollout script.** Inside a real team this starts smaller than this page — reading how the team actually works before writing anything down. The sequence above is the method's order (context → judgment → gateway), not a week-by-week promise made from outside the building.
 
 The reason to believe any of this is not this page. It is the rest of the repository — the same method, running, auditable: [start with an artifact](../examples/routing-brief-sample.md), or [watch a session run](../examples/annotated-session.md).

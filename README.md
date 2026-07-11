@@ -1,12 +1,14 @@
-# Governed AI Workflow
+# Candidate Go-to-Market — governed from signal to learning
 
-> ### You don't scale labor. You scale judgment.
+> ### Read the market. Qualify the opportunity. Position the proof. Learn from the response.
 
-**I turn messy market signals into decisions a team can trust — AI runs the volume, judgment stays human.**
+**Johanna Fan · Marketing / GTM / Customer Signal Analytics**
 
-This repository is the proof, opened up: my own job search runs as a governed AI pipeline — dozens of versioned judgment skills screening 20K+ job-market signals under rules I defined and reviewed, where every claim ships with its own boundary. This public repo is a curated case study of that private, running system.
+**I turned my own job search into a live Candidate Go-to-Market system: reading market signals, qualifying opportunities, mapping the people behind the decision, positioning defensible value, tracking conversion states, and learning from non-conversion.**
 
-**Don't take the pitch — audit an artifact.** Start with [a routing brief produced by a published skill, run on a fictional job post](examples/routing-brief-sample.md), then check every field against the [skill contract that generated it](skills/jd-loop-routing/SKILL.md).
+AI runs the volume and supports research, drafting, and QA. I own the criteria, claims, release decisions, and write-back. The result is not an AI job-search bot; it is a running Candidate Go-to-Market case whose operating method can be inspected field by field.
+
+**Don't take the Marketing framing on faith — trace it.** Start with [the public Marketing-reframe run](examples/marketing-reframe-run.md), which maps each live mechanism to a Marketing / GTM capability and its evidence boundary. Then audit [a routing brief produced from a fictional job post](examples/routing-brief-sample.md) against the [skill contract that generated it](skills/jd-loop-routing/SKILL.md).
 
 ![Market Release Workflow — each application runs like a candidate market release, every gate a human judgment call](assets/market-release-workflow.png)
 
@@ -16,13 +18,21 @@ This repository is the proof, opened up: my own job search runs as a governed AI
 
 ---
 
-## §1 · The loop
+## §1 · The Candidate GTM loop
 
-The single mechanism everything else demonstrates:
+The customer journey here is my own hiring journey:
+
+```text
+market signals -> qualification -> stakeholder / reader diagnosis
+  -> positioning and proof -> release across application / outreach touchpoints
+  -> response, silence, rejection -> next-cycle targeting, message, proof, rule
+```
+
+The mechanism that makes that journey learn is:
 
 **Define → Evaluate → Codify → Tighten → Reuse.**
 
-Notice a recurring judgment; run it on real cases with a human making the calls; write the stabilized judgment into a natural-language skill; when a run misses, fix the *rule*, not just the output; start the next run from the tightened rule. Judgment written this way compounds — judgment kept in your head just repeats.
+Notice a recurring market judgment; run it on real cases with a human making the calls; write the stabilized judgment into a natural-language skill; when a response exposes a miss, fix the *rule*, not just the output; start the next run from the tightened rule. This is the system's test-and-learn layer: outcomes change the next targeting, positioning, proof, or gate instead of disappearing into a dashboard.
 
 ![The system learns by writing decisions back](assets/write-back-loop.png)
 
@@ -34,21 +44,33 @@ Full walk-through with a real iteration: [docs/the-loop.md](docs/the-loop.md)
 
 **This is:**
 
-- a case study of one person **governing** ~40 AI skills for a high-stakes personal workflow — with constitution, contracts, exit gates, and machine-enforced consistency;
-- a demonstration of *marketing-analytics judgment* applied to an unusual dataset: the job market itself — signal screening, audience calibration, claim discipline, measurement honesty;
-- checkable: the exhibits are real (adapted) working documents, and the [examples](examples/) let you audit the method against artifacts.
+- a live **Candidate Go-to-Market case**: the job market is the market, hiring teams are the decision audience, resumes and outreach are touchpoints, interviews are the next conversion event, and every response can change the next cycle;
+- a demonstration of Marketing / GTM analytics judgment applied to an unusual but real dataset — market sensing, qualification, stakeholder intelligence, positioning, conversion QA, CRM state discipline, and loss learning;
+- a governed AI operating method underneath that motion — dozens of versioned judgment skills, a constitution, field contracts, review gates, and machine-enforced consistency;
+- checkable: the exhibits are re-authored public editions of working documents, and the [examples](examples/) let you audit each Marketing claim against an artifact.
 
 **This is not:**
 
+- proof that I have owned a production campaign, enterprise attribution model, revenue target, lifecycle program, or someone else's CRM — the public claim is the transferable judgment, with its ownership boundary attached;
 - a framework or template to install — the skills encode *my* judgment; the transferable part is the method for encoding yours ([what that transfer looks like on a team](docs/from-one-operator-to-a-team.md));
 - a prompt library — the value is in field contracts, boundaries, and gates, not incantations;
 - an autonomous job-applying bot — nothing is sent, claimed, or written back without a human decision (see [§6](#6--what-im-not-claiming)).
 
-**"Isn't this over-engineered for a job search?"** The search was the testbed; the reusable artifact is the method. A job search happens to be an ideal proving ground: high stakes, messy signals, a real market that answers back, and zero tolerance for confident errors — the same properties as any analytics work worth doing.
+**"Isn't this over-engineered for a job search?"** The search is the live market case. It has scarce attention, noisy demand signals, multiple decision-makers, competing positioning, measurable next events, and losses that can teach the wrong lesson if the data is dirty. Those are the same conditions that make Marketing / GTM analytics worth governing.
 
 ---
 
-## §3 · Architecture
+## §3 · Architecture — GTM motion first, AI method underneath
+
+```text
+MARKET       job / company / team signals
+QUALIFY      worth the attention, correct segment, correct reader
+POSITION     true experience -> buyer-relevant value and proof
+RELEASE      application, profile, outreach, interview touchpoints
+LEARN        state, response, silence, rejection -> next-cycle decision
+```
+
+The governed-AI layer makes that motion repeatable without outsourcing the calls:
 
 ```text
 constitution/          one governance file, loaded into every session
@@ -60,10 +82,12 @@ constitution/          one governance file, loaded into every session
 
 Four design decisions carry the system:
 
-1. **Judgment lives in prose, guarantees live in code.** Skills are written in natural language — judgment iterates fastest in the language you think in. Zero-exception constraints (mirror sync between AI runtimes, state validation, format checks) are pre-commit hooks and validators, not prose promises.
-2. **Runtime-agnostic authoring with generated mirrors.** Skill sources are authored once in a runtime-neutral directory; per-runtime mirrors are *generated*, and a pre-commit hook blocks any commit where source and mirror diverge. The system survives its AI vendor.
-3. **Commands route, skills own.** Entry points never restate the framework they route into — the same separation of powers shown in [exhibit 2b](skills/systemize-learnings/retrospective.command.md).
-4. **Runtime truth is a database, not a document.** Application state lives in a Postgres tracker; milestones are fields written in the same turn as the artifact. "Done" is queryable ([docs/pipeline.md](docs/pipeline.md)).
+1. **Market before message.** Opportunity qualification and reader diagnosis happen before the resume opens, so positioning starts from demand instead of forcing every bright story into every market.
+2. **One truth across touchpoints.** Application, outreach, response, and next-action states live in a canonical tracker; the resume, LinkedIn surface, and follow-up queue do not get to invent separate realities.
+3. **Every claim carries its measurement boundary.** Role nouns, AI claims, counts, and inferred loss reasons state what the evidence supports and what it cannot prove — the same discipline that keeps an analytics readout from implying causality it does not own.
+4. **Outcomes write back.** Commands route, skills own judgment, and response signals return to the rule or source that should change. The loop optimizes the next decision, not the appearance of activity.
+
+Underneath those business decisions, judgment lives in prose and zero-exception guarantees live in hooks and validators. Skill sources are authored once, runtime mirrors are generated, and a pre-commit hook blocks drift. The system survives its AI vendor because the operating judgment is the asset.
 
 ![Context, Knowledge, Tools — clear context in, reusable judgment applied, governed action out](assets/context-knowledge-tools.png)
 
@@ -71,33 +95,34 @@ Four design decisions carry the system:
 
 ## §4 · The exhibits
 
-Five working documents, re-authored as public editions, chosen because each demonstrates a different governance move:
+Six working documents, re-authored as public editions, chosen because each makes one Marketing / GTM judgment auditable:
 
-| # | Exhibit | The move it demonstrates |
+| # | Exhibit | The Marketing / GTM judgment it makes checkable |
 |---|---|---|
-| 1 | [`skills/jd-loop-routing/SKILL.md`](skills/jd-loop-routing/SKILL.md) | **Evidence blinding & claim ceilings.** The role-reading stage is forbidden from seeing the candidate's evidence, and writes down what *cannot* be claimed (`cannot_borrow`, `high_risk_nouns`) before drafting exists. |
-| 2a | [`skills/systemize-learnings/SKILL.md`](skills/systemize-learnings/SKILL.md) | **Default-DON'T-write.** A four-question triage that makes learnings *earn* their way into long-term sources — the anti-rule-sediment mechanism. |
-| 2b | [`skills/systemize-learnings/retrospective.command.md`](skills/systemize-learnings/retrospective.command.md) | **Separation of powers.** The command routes; the skill owns the framework; nothing is defined twice. |
-| 3a | [`skills/resume-tailor/EXCERPT.md`](skills/resume-tailor/EXCERPT.md) | **Become-the-reader discipline.** Three phases where the hiring manager's read is built *before* candidate material opens; AI visibility tiered by a three-question test. |
-| 3b | [`skills/resume-tailor/graders.md`](skills/resume-tailor/graders.md) | **Gates that point, never re-edit.** A 7-check exit gate forbidden from inventing standards at the door. |
+| 1 | [`skills/jd-loop-routing/SKILL.md`](skills/jd-loop-routing/SKILL.md) | **Qualification before positioning.** Read the work, decision audience, correct segment, must-prove, and claim ceiling before candidate evidence can bias the market read. |
+| 2a | [`skills/systemize-learnings/SKILL.md`](skills/systemize-learnings/SKILL.md) | **Closed-loop learning without overfitting.** A four-question triage separates repeatable signal from one-case noise before an outcome changes the operating rule. |
+| 2b | [`skills/systemize-learnings/retrospective.command.md`](skills/systemize-learnings/retrospective.command.md) | **A governed learning entry point.** The command routes the result; the skill owns the decision framework, so the feedback loop has one definition. |
+| 3a | [`skills/resume-tailor/EXCERPT.md`](skills/resume-tailor/EXCERPT.md) | **Positioning and value translation.** True evidence is translated into the reader's work objects and next-step reason without borrowing ownership. |
+| 3b | [`skills/resume-tailor/graders.md`](skills/resume-tailor/graders.md) | **Conversion QA.** A 7-check release gate asks whether the right reader sees relevant, defensible value — and points back to the owning rule when they do not. |
+| 4 | [`skills/marketing-reframe/SKILL.md`](skills/marketing-reframe/SKILL.md) | **Capability translation with evidence levels.** A true mechanism earns Marketing language only after buyer, judgment, next action, and claim boundary are explicit. |
 
 Supporting docs: [the pipeline](docs/pipeline.md) · [the loop](docs/the-loop.md) · [from one operator to a team](docs/from-one-operator-to-a-team.md) (the reader's next question — *so what would you do on my team?* — answered in the repo's own claim register) · [evidence ledger](docs/evidence-ledger.md) (dated snapshots, so numbers can't drift silently) · [how this repo was sanitized](docs/how-this-repo-was-sanitized.md) (a meta-exhibit: the publishing process run under the same governance).
 
-Checkable artifacts: [routing brief on a fictional JD](examples/routing-brief-sample.md) · [a resume line failing the exit gate, and the fix](examples/resume-draft-fail-and-fix.md) · [failure → guardrail log](examples/failure-guardrail-log.md) · [write-back triage run](examples/write-back-triage.md) · [an annotated session — the method in motion](examples/annotated-session.md).
+Checkable artifacts: [Candidate GTM → Marketing capability map](examples/marketing-reframe-run.md) · [routing brief on a fictional JD](examples/routing-brief-sample.md) · [a resume line failing the exit gate, and the fix](examples/resume-draft-fail-and-fix.md) · [failure → guardrail log](examples/failure-guardrail-log.md) · [write-back triage run](examples/write-back-triage.md) · [an annotated lifecycle session](examples/annotated-session.md).
 
-The five exhibits are a curated sample, not the whole team. The full working roster — real module names, stage by stage, each tied to the judgment it owns — is mapped in [the pipeline, staffed](docs/pipeline.md#the-pipeline-staffed).
+The six exhibits are a curated sample, not the whole team. The full working roster — real module names, stage by stage, each tied to the judgment it owns — is mapped in [the pipeline, staffed](docs/pipeline.md#the-pipeline-staffed).
 
 ---
 
-## §5 · Guardrails born from real mistakes
+## §5 · Market feedback that became guardrails
 
-The system's error rate falls because errors convert into constraints. Three receipts, in full in the [failure → guardrail log](examples/failure-guardrail-log.md):
+The system makes repeatable errors harder to repeat silently by converting confirmed misses into constraints. Three receipts, in full in the [failure → guardrail log](examples/failure-guardrail-log.md):
 
-- **The market that looked cold** — failed scrape queries rendered as real zeros; now every sweep report displays its own failure statistics. *(The tracking-break failure, in job-market form.)*
-- **The fluent adjacent profile** — an account executive misfiled as a peer truth source; now a six-bucket classification with the rule "the consumer of a role's output is not its peer."
-- **The sentence that interviewed better than it defended** — a borrowed platform noun caught by luck; now claim ceilings are mandatory contract fields, written by a stage that never sees the candidate's evidence, and enforced at an exit gate.
+- **The market that looked cold** — failed source queries rendered as real zeros; now every market readout carries its own collection-health statistics. That is tracking integrity before segmentation or budget decisions.
+- **The fluent adjacent profile** — an internal customer was misfiled as peer truth; now stakeholder sources are classified before their words influence audience or positioning decisions.
+- **The sentence that interviewed better than it defended** — a borrowed platform noun passed as fluent positioning; now claim ceilings are written before message development and enforced at release QA.
 
-Not claimed: that the operator stopped making mistakes. Claimed: **mistakes stopped being repeatable.**
+Not claimed: that the operator stopped making mistakes. Claimed: **a confirmed miss leaves a control where the same failure would recur.**
 
 ---
 
@@ -107,6 +132,7 @@ Not claimed: that the operator stopped making mistakes. Claimed: **mistakes stop
 - **Not automation of outreach.** Outreach is manual and research-assisted; the system governs *whether* and *what* — it never sends. No message leaves without a human writing the final call.
 - **Not autonomous claiming.** Three calls stay human: what I claim, what I send, and what counts as true state. AI does execute deterministic, pre-authorized write-backs under review gates — but write authority, conflict handling, and every outbound move remain the operator's.
 - **Not platform ownership.** Exposure to CRM and marketing tooling in this system is workflow-level; I claim no production administration of anyone's stack.
+- **Not enterprise Marketing ownership.** This case proves upstream market judgment, qualification, positioning, measurement discipline, and learning-loop design. It does not claim campaign ownership, formal attribution, revenue ownership, or production lifecycle administration.
 - **Not a finished victory lap.** The system's own market test is running now. What's exhibited is the method's discipline, not a triumphant outcome — and that honesty is itself the discipline on display.
 
 ---
@@ -115,9 +141,9 @@ Not claimed: that the operator stopped making mistakes. Claimed: **mistakes stop
 
 | Figure | What it means | Its boundary |
 |---|---|---|
-| **20K+** | job-market signals screened with review rules | AI did the volume under a rubric I defined and reviewed. I did not read twenty thousand job descriptions — that's the point. |
-| **6** | repeatable judgment gates from role selection to learning write-back | Gates are human judgment calls the system *routes*, not steps it automates away. |
-| **1** | loop connecting market feedback, proof, and learning | The loop is the product; applications are its test runs. |
+| **20K+** | market signals screened through qualification rules | AI did the volume under a rubric I defined and reviewed. I did not read twenty thousand job descriptions, and a screened signal is not buyer intent. |
+| **6** | repeatable Candidate GTM gates from qualification to learning write-back | Gates are human judgment calls the system *routes*, not funnel stages it automates away. |
+| **1** | closed loop connecting market response, positioning, proof, and next-cycle learning | The loop is the product; applications and outreach are its live market runs. |
 | **dozens, deliberately pruned** | versioned judgment skills + command entry points under governance | Exact dated counts live in the [evidence ledger](docs/evidence-ledger.md) — they move by design: skills get retired when a sharper one absorbs them, and more isn't better. |
 | **months of daily iteration** | how the guardrails accumulated | Deliberately not a commit count: volume of iteration isn't quality of iteration. The quality mechanism is the [guardrail log](examples/failure-guardrail-log.md). |
 

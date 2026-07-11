@@ -1,6 +1,6 @@
 # Failure → guardrail log
 
-> **Checkable artifact.** Three real misses from the production system and the rules they became. Details are generalized (no companies, no people), but each failure genuinely happened, cost something, and permanently changed a rule. This is the Tighten step of [the loop](../docs/the-loop.md), shown with receipts — because a system that only exhibits its successes is exhibiting nothing.
+> **Checkable artifact.** Three real misses from the production system and the rules they became. Details are generalized (no companies, no people), but each failure genuinely happened, cost something, and permanently changed a market, audience, message, or measurement decision. This is the Tighten step of [the Candidate GTM learning loop](../docs/the-loop.md), shown with receipts — because a system that only exhibits its successes is exhibiting nothing.
 
 ---
 
@@ -42,4 +42,4 @@
 
 ### The common shape
 
-Each entry is one full pass of the loop: a miss (Evaluate) became a written rule (Codify) placed where it fires automatically (Tighten) — a skill's output contract, a classification table, an exit gate. None of them depends on anyone remembering the incident. That is the difference this system is claiming: **not that the operator stopped making mistakes — that mistakes stopped being repeatable.**
+Each entry is one full pass of the loop: a miss (Evaluate) became a written rule (Codify) placed where it fires automatically (Tighten) — a skill's output contract, a classification table, an exit gate. None of them depends on anyone remembering the incident. That is the difference this system is claiming: **not that the operator stopped making mistakes — that a confirmed miss leaves a control where the same failure would recur.**

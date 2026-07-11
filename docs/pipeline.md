@@ -1,10 +1,10 @@
-# The pipeline — one application's life
+# The Candidate GTM pipeline — one market opportunity's life
 
-> **Public edition.** A generalized redraw of the production lifecycle spec. Stage names are translated, runtime details are abstracted to "the tracker" (a Postgres database that owns runtime truth). The structure — two worlds, one handoff line, milestones as fields — is the production design.
+> **Public edition.** A generalized redraw of the production lifecycle spec. Stage names are translated, runtime details are abstracted to "the tracker" (a Postgres database that owns runtime truth). The job search is the live case; the transferable read is a go-to-market motion that turns noisy demand signals into qualified attention, buyer-specific positioning, governed release, and next-cycle learning.
 
 ## Two worlds, one boundary
 
-The system's first governance decision is a split: opportunities that haven't earned deep work live in the **candidate pool**; only opportunities worth applying to enter the **application pipeline**. The boundary is explicit — a row in the applications table — so "is this being worked on?" is never a matter of opinion.
+The system's first market decision is a split: opportunities that have not earned deep work stay in the **candidate pool**; only opportunities worth a deliberate release enter the **application pipeline**. Attention is the scarce budget. The boundary is explicit — a row in the applications table — so qualification changes investment, not just a label.
 
 ```mermaid
 flowchart TB
@@ -27,9 +27,26 @@ flowchart TB
 
 *Each gate wears a different expert lens and asks a different question. (This visual shows the earlier seven-decision layout; the current system runs six — outreach and follow-up merged.)*
 
+## The same pipeline, in Marketing / GTM language
+
+This is an interpretation layer over the real runtime sequence, not a claim that a personal job search owns an enterprise revenue funnel.
+
+| Runtime stage | Marketing / GTM read | The decision it improves | Claim boundary |
+|---|---|---|---|
+| Market sweep | Market sensing / opportunity discovery | Which parts of live demand deserve attention | Raw volume is not qualified demand or buyer intent |
+| Intake + slate | Qualification / segmentation / prioritization | Which opportunities receive a full human investment | Not lead scoring or campaign targeting ownership |
+| Stakeholder calibration | Audience and decision-role intelligence | Whose context should shape the role read and next touch | A person is a contact, not automatically a persona |
+| Role routing | Targeting + correct-pool diagnosis | Which market category and buyer problem positioning must land inside | Not candidate evidence and not final message copy |
+| Evidence translation | Positioning + value proposition + proof development | Why this reader should take the next step | Translates true evidence; never borrows role ownership |
+| Cold read + release | Conversion QA / message-risk control | Whether the right reader sees relevant, defensible value before launch | No conversion uplift without a comparable denominator |
+| Status + outreach state | CRM state / lifecycle follow-through | Which next action is due and what context downstream can trust | Personal CRM discipline, not enterprise administration |
+| Response + write-back | Loss learning / closed-loop optimization | What targeting, proof, message, or rule should change next | Loss hypotheses are not formal attribution |
+
+The worked capability and evidence mapping is public in [the Marketing-reframe run](../examples/marketing-reframe-run.md).
+
 ## The pipeline, staffed
 
-Nine nodes, run by one person — because each node's judgment is written down as a named, versioned module. Skills own a judgment; commands are thin entry points that route into them (the separation shown in [exhibit 2b](../skills/systemize-learnings/retrospective.command.md)). These are real module names from the production system as of 2026-07-11, each tied to the one judgment it owns:
+Nine nodes, run by one person — because each node's judgment is written down as a named, versioned module. Skills own a judgment; commands are thin entry points that route into them (the separation shown in [exhibit 2b](../skills/systemize-learnings/retrospective.command.md)). These are real module names from the production system as of 2026-07-11, each tied to the one decision it improves:
 
 | Stage | Module | The judgment it owns |
 |---|---|---|
@@ -65,19 +82,20 @@ Nine nodes, run by one person — because each node's judgment is written down a
 | 9 · Status & write-back | [`retrospective`](../skills/systemize-learnings/retrospective.command.md) *(command · exhibit 2b)* | the closing entry point that routes into it |
 | 9 · Status & write-back | `phrase-capture` *(skill)* | language that outperformed gets captured the day it appears, before it evaporates |
 | Downstream | `interview-script` *(skill)* | the same positioning, extended into an interview narrative that survives follow-up questions |
+| Conditional calibration | [`marketing-reframe`](../skills/marketing-reframe/SKILL.md) *(skill · exhibit 4)* | which Marketing / GTM capability a true mechanism can defend, at which evidence level, for which buyer decision |
 | Public surfaces | `pipeline-page` / `linkedin-profile-refresh` / `candidate-materials-edit` *(skills)* | the public surfaces are governed like the pipeline: one source of truth each, no drift between them |
 
-This roster names 22 of the 39 skills and 13 of the 26 commands live as of 2026-07-11 (exact dated counts: [evidence ledger](evidence-ledger.md)). What's missing is deliberate: sweep presets carry internal codenames, some modules are vendor- or course-specific utilities, and a few encode private research surfaces. Retirement is normal here — the most recent cut was `hiring-memo` (2026-07-10), absorbed into a sharper resume-pitch flow. More modules isn't better; owned judgments are.
+This roster names 23 of the 41 skills and 13 of the 27 commands live as of 2026-07-11 (exact dated counts: [evidence ledger](evidence-ledger.md)). What's missing is deliberate: sweep presets carry internal codenames, some modules are vendor- or course-specific utilities, and a few encode private research surfaces. Retirement is normal here — the most recent cut was `hiring-memo` (2026-07-10), absorbed into a sharper resume-pitch flow. More modules isn't better; owned judgments are.
 
 ## The handoff line (stage 5 → 6)
 
-The dotted cut is deliberate and is the pipeline's most opinionated design choice. Stages 1–5 are **role-only calibration**: they read the market, the org, and the job — never the resume — so they can run batched, in one orchestration session, consistently across many roles. Stage 6 onward is **quality-decisive work**: each role gets its own clean session, because tailoring two roles in one context lets framing bleed between them and dilutes the later one.
+The dotted cut is deliberate and is the pipeline's most opinionated positioning decision. Stages 1–5 are **market and audience calibration**: they read demand, the org, the decision roles, and the work — never the resume — so the target is set before message development can bias it. Stage 6 onward is **quality-decisive positioning and release work**: each role gets its own clean session, because two markets in one context let audience, value proposition, and proof bleed between them.
 
 Know what may run in parallel; know what must be isolated.
 
 ## Milestones are fields, not memories
 
-Every node writes its completion into a canonical tracker field in the same turn the artifact lands — routing done, tailor done, exported, submitted, response received. The definition of done is uniform across the whole pipeline:
+Every node writes its completion into a canonical tracker field in the same turn the artifact lands — qualified, routed, positioned, released, response received, next action due. This is the system's lifecycle and data-trust layer: every touchpoint reads the same state instead of inventing its own. The definition of done is uniform across the whole pipeline:
 
 > done = artifact landed **+** canonical state written back **+** downstream can continue.
 
@@ -85,6 +103,6 @@ A skipped write-back counts as not done, and state drift is prevented by design 
 
 ## The gate principle
 
-Gates are not free — each one taxes every run. A node earns a gate only when it is frequently missing, easy to get wrong, or when poor quality directly damages the next step. Most gates just check facts (does the artifact exist, is the milestone written); only a few nodes carry true quality gates, and those consume the artifact's own self-checks rather than re-reviewing everything from scratch.
+Gates are not free — each one taxes every run. A node earns a gate only when it is frequently missing, easy to get wrong, or when poor quality directly creates conversion leakage or corrupts the next readout. Most gates just check facts (does the artifact exist, is the lifecycle state written); only a few nodes carry true quality gates, and those consume the artifact's own self-checks rather than re-reviewing everything from scratch.
 
 The goal is fewer wasted runs and less state drift — not a pipeline where every step re-audits the last.

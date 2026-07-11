@@ -87,7 +87,7 @@ When a single-conversation insight is written back into a skill or spec, keep it
 The authored skill and command sources live in one runtime-agnostic directory. Compatible mirrors for a second AI runtime are **generated, never hand-edited**:
 
 ```bash
-node scripts/sync-agent-settings.mjs
+node <the mirror-sync script>
 ```
 
 Any change to an authored skill or command must update the source first, then run sync, then commit source and mirror together. A pre-commit hook blocks the commit if sync was skipped or the mirror wasn't staged — so consistency between runtimes is enforced by machinery, not memory.

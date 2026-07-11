@@ -33,7 +33,7 @@ Every noun in it appears in the JD. That is precisely why it goes to the gate.
 - *"driving retention optimization"* — the body proves one cohort view used twice. "Driving optimization" claims an outcome loop the evidence doesn't carry; *optimization* is a `use carefully` term with no supporting proof here.
 - *"AI-assisted performance reporting"* — the only defensible fragment, but as written it hangs on a leading verb ("Led") that inflates it by association. It also fails the three-question AI test as phrased: the work object and output are real, but the defensibility mechanism (validation against source records) — the strongest part of the true story — is invisible.
 
-**Check 4 — Summary and page economy (advisory here):** the named fail signal applies — *the most JD-like sentence is also the least defensible one.* This line would be the first thing a hiring manager probes and the first thing that breaks.
+And the draft trips Check 3's named fail signal verbatim — *the most JD-like sentence is also the least defensible one.* This line would be the first thing a hiring manager probes and the first thing that breaks.
 
 **Verdict: blocked at the minimum bar (claim defensibility). Route back to the translation rules — the gate does not rewrite.**
 

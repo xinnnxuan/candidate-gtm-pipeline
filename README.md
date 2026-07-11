@@ -54,7 +54,7 @@ Full walk-through with a real iteration: [docs/the-loop.md](docs/the-loop.md)
 - proof that I have owned a production campaign, enterprise attribution model, revenue target, lifecycle program, or someone else's CRM — the public claim is the transferable judgment, with its ownership boundary attached;
 - a framework or template to install — the skills encode *my* judgment; the transferable part is the method for encoding yours ([what that transfer looks like on a team](docs/from-one-operator-to-a-team.md));
 - a prompt library — the value is in field contracts, boundaries, and gates, not incantations;
-- an autonomous job-applying bot — nothing is sent, claimed, or written back without a human decision (see [§6](#6--what-im-not-claiming)).
+- an autonomous job-applying bot — nothing is sent or claimed without a human decision, and write-backs run only as deterministic, pre-authorized operations under review gates (the exact split of calls: [§6](#6--what-im-not-claiming)).
 
 **"Isn't this over-engineered for a job search?"** The search is the live market case. It has scarce attention, noisy demand signals, multiple decision-makers, competing positioning, measurable next events, and losses that can teach the wrong lesson if the data is dirty. Those are the same conditions that make Marketing / GTM analytics worth governing.
 

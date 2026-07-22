@@ -20,7 +20,7 @@ flowchart TB
         G --> H["8 · Release<br/><i>export, final checks, submit</i>"]
         H --> I["9 · Status sync & write-back<br/><i>market response → tracker → next cycle's rules</i>"]
     end
-    I -.->|"every response sharpens the next sweep"| A
+    I -.->|"reviewed patterns can change the next sweep"| A
 ```
 
 ![The pipeline is the product — each step asks a different question before the application moves forward](../assets/pipeline-seven-decisions.png)
@@ -46,7 +46,7 @@ The worked capability and evidence mapping is public in [the Marketing-reframe r
 
 ## The six gates
 
-The nine nodes above are where work happens; the six gates are where a human decides. The counts differ on purpose: a node is a stage of the pipeline, a gate is a judgment call that refuses to be delegated. Each gate is a marketing decision — and each carries the same names as the cards in the operating picture (the earlier visual showed seven; outreach and follow-up merged into one).
+The nine nodes above are where work happens; the six gates are where a human decides. The counts differ on purpose: a node is a stage of the pipeline, a gate is a judgment call that refuses to be delegated. The operating picture groups work into broader buyer-facing lenses; this table names lifecycle decisions. They connect by function, not by shared labels.
 
 | # | Gate | The human call | Where it sits |
 |---|---|---|---|
@@ -61,7 +61,7 @@ In Marketing terms: qualification, segment investment, positioning sign-off, lau
 
 ## The pipeline, staffed
 
-Nine nodes, run by one person — because each node's judgment is written down as a named, versioned module. Skills own a judgment; commands are thin entry points that route into them (the separation shown in [exhibit 2b](../skills/systemize-learnings/retrospective.command.md)). These are real module names from the production system as of 2026-07-11, each tied to the one decision it improves:
+Nine nodes, run by one person — because each node's judgment is written down as a named, versioned module. The operating board shows the functional lenses; this roster opens the modules that staff those functions. Skills own a judgment; commands are thin entry points that route into them (the separation shown in [exhibit 2b](../skills/systemize-learnings/retrospective.command.md)). These are real module names from the production system as of 2026-07-22, each tied to the one decision it improves:
 
 | Stage | Module | The judgment it owns |
 |---|---|---|
@@ -100,7 +100,7 @@ Nine nodes, run by one person — because each node's judgment is written down a
 | Conditional calibration | [`marketing-reframe`](../skills/marketing-reframe/SKILL.md) *(skill · exhibit 4)* | which Marketing / GTM capability a true mechanism can defend, at which evidence level, for which buyer decision |
 | Public surfaces | `pipeline-page` / `linkedin-profile-refresh` / `candidate-materials-edit` *(skills)* | the public surfaces are governed like the pipeline: one source of truth each, no drift between them |
 
-This roster names 23 of the 41 skills and 13 of the 27 commands live as of 2026-07-11 (exact dated counts: [evidence ledger](evidence-ledger.md)). What's missing is deliberate: sweep presets carry internal codenames, some modules are vendor- or course-specific utilities, and a few encode private research surfaces. Retirement is normal here — the most recent cut was `hiring-memo` (2026-07-10), absorbed into a sharper resume-pitch flow. More modules isn't better; owned judgments are.
+This roster names 23 of the 44 skills and 13 of the 26 commands live as of 2026-07-22 (exact dated counts: [evidence ledger](evidence-ledger.md)). What's missing is deliberate: sweep presets carry internal codenames, some modules are vendor- or course-specific utilities, and a few encode private research surfaces. Retirement is normal here — the most recent cut was `hiring-memo` (2026-07-10), absorbed into a sharper resume-pitch flow. More modules isn't better; owned judgments are.
 
 ## The handoff line (stage 5 → 6)
 
@@ -110,11 +110,11 @@ Know what may run in parallel; know what must be isolated.
 
 ## Milestones are fields, not memories
 
-Every node writes its completion into a canonical tracker field in the same turn the artifact lands — qualified, routed, positioned, released, response received, next action due. This is the system's lifecycle and data-trust layer: every touchpoint reads the same state instead of inventing its own. The definition of done is uniform across the whole pipeline:
+Production milestones write their owned tracker fields in the same turn the artifact lands — people calibration, routing, tailoring, export, submission, and outcome state. Research notes and intermediate judgments remain linked artifacts; the tracker is not a per-judgment event log. This is the system's lifecycle and data-trust layer: downstream work reads canonical milestone state instead of inventing its own. The definition of done is uniform across the whole pipeline:
 
 > done = artifact landed **+** canonical state written back **+** downstream can continue.
 
-A skipped write-back counts as not done, and state drift is prevented by design rather than by remembering. This is what makes the system auditable months later: the tracker is a queryable history of every judgment, not a to-do app.
+A skipped required write-back counts as not done. That makes drift visible and bounded rather than impossible: months later, the canonical milestone and lifecycle state can be queried and checked against its linked artifact. The tracker is an operating record, not a memory substitute or a claim to event-source every judgment.
 
 ## The gate principle
 

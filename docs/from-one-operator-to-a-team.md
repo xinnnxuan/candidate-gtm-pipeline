@@ -33,7 +33,7 @@ So the transfer is not "install my system." It is making three moves explicit �
 2. **Judgment written where it can be reviewed, versioned, and tightened.** The skills move.
 3. **One gate between AI and the system of record.** The gateway move.
 
-What does *not* transfer: my skills. [§2 of the README](../README.md#2--what-this-is--and-is-not) draws this boundary, and this page is built around it, not over it — the skills here encode *my* judgment about *my* pipeline; installing them in your team would just be a framework with extra steps. What transfers is the method for encoding **your team's** judgment, plus the governance shapes that make it safe to act on once encoded.
+What does *not* transfer: my skills. [The README boundary](../README.md#what-i-dont-claim) draws this line, and this page is built around it, not over it — the skills here encode *my* judgment about *my* pipeline; installing them in your team would just be a framework with extra steps. What transfers is the method for encoding **your team's** judgment, plus the governance shapes that make it safe to act on once encoded.
 
 ## Day one — one shared context
 
@@ -99,7 +99,7 @@ If the ladder looks abstract, it isn't — it already runs, solo, at skill level
 ## What this page is NOT claiming
 
 - **Not team history.** I have not run this method with a team. This page is a design with a live proving ground, written inside a repo whose whole discipline is that claims carry their own boundaries — which is exactly why I can say that plainly and expect the rest to stand.
-- **Not your stack's administrator.** Same boundary as [§6 of the README](../README.md#6--what-im-not-claiming): my CRM and marketing-tooling exposure is workflow-level, on my own live portal. No one's production instance is being claimed here.
+- **Not your stack's administrator.** Same boundary as [the README](../README.md#what-i-dont-claim): my CRM and marketing-tooling exposure is workflow-level, on my own live portal. No one's production instance is being claimed here.
 - **Not your campaign or revenue owner.** The transferable proof is upstream Marketing judgment, shared context, state discipline, measurement honesty, and learning-loop design — not a claim to past ownership of enterprise campaigns, attribution, lifecycle, or revenue.
 - **Not a rollout script.** Inside a real team this starts smaller than this page — reading how the team actually works before writing anything down. The sequence above is the method's order (context → judgment → gateway), not a week-by-week promise made from outside the building.
 

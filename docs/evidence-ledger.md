@@ -4,6 +4,9 @@
 
 | Figure | As of | What it counts | Its boundary |
 |---|---|---|---|
+| **21,106** | 2026-08-01 | job-market signals screened by the sweep + intake rules | Screened through qualification rules, not read individually and not all pursued. The evergreen "21K+" floor still holds. |
+| **490 / 2.3%** | 2026-08-01 | application records opened out of the 21,106 screened signals | An opened record marks a confirmed pursuit — a tracked folder and campaign — not a submission; 367 of the 490 carry a submission timestamp. |
+| **50 / 26** | 2026-08-01 | authored skills / command entry points under governance | Inventory count, not an impact measure. The inventory moved 44 → 50 since July 22 as responsibilities were added, absorbed, or retired. |
 | **21,059** | 2026-07-22 | job-market signals screened by the sweep + intake rules | Screened through qualification rules, not read individually and not all pursued. The evergreen copy says "21K+"—a floor that stays true while this snapshot moves. |
 | **44 / 26** | 2026-07-22 | authored skills / command entry points under governance | Inventory count, not an impact measure. The inventory includes judgment owners and narrower utilities; assets are added, absorbed, or retired when their responsibility changes. |
 | **21,008** | 2026-07-11 | job-market signals screened by the sweep + intake rules | Historical snapshot. At that release the evergreen copy used the lower "20K+" floor. Screened did not mean read individually or pursued. |

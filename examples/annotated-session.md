@@ -55,6 +55,6 @@
 
 ## Why this artifact is here
 
-Count the human's appearances: twice. Once to start the session, once to rule on the single message that genuinely needed a human. Everything else was either pre-decided — written in the skill, by earlier sessions' lessons — or refused, by a gate that treats ambiguity as a queue rather than a guess. That ratio — AI runs the volume, judgment stays human, state lands the same turn — is the claim this repository keeps making, shown here at working speed.
+Most of the session followed rules established before the run. The one genuinely ambiguous message stopped for review instead of being guessed through, and the resulting state landed in the same turn. That is the claim this repository keeps making: explicit criteria, visible exceptions, and consistent state at working speed.
 
 And the ladder this session walked — raw message → classified candidate → human ruling → promoted tracker state — is the same ladder [from one operator to a team](../docs/from-one-operator-to-a-team.md) proposes making structural: for a team, per write, at the CRM's front door, instead of practiced per skill.

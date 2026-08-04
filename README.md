@@ -1,7 +1,7 @@
 # Candidate GTM Pipeline
 
 > **By Johanna Fan** · Marketing / GTM / Customer Signal Analytics<br>
-> **v2 · Last updated July 22, 2026**
+> **v2 · Last updated August 1, 2026**
 
 Candidate GTM Pipeline is my live Marketing / GTM case for hiring managers: an inspectable record of how I turn noisy market signals into qualified opportunities, defensible positioning, clean releases, and better next-cycle decisions.
 
@@ -22,6 +22,15 @@ LEARN     turn the response or miss into the next decision
 
 The work object changes at every step: signal → pursuit rationale → reader map → proof package → state receipt → rule change. I write the brief, decide what enters the pipeline, review the handoffs, and stop a release when the evidence cannot carry the claim. A response matters only when it changes targeting, proof, or follow-through. [Watch one opportunity move through the loop](examples/annotated-session.md).
 
+## Two workbenches, two questions
+
+Day to day, that loop runs from two connected views:
+
+- **Portfolio workbench — *where should attention go now?*** Every incoming signal passes the qualification gate before any campaign work begins — about 2% become tracked pursuits ([exact figures, dated](docs/evidence-ledger.md)). Material signals outrank routine volume, and only patterns that repeat with a real denominator may change a rule.
+- **Campaign workbench — *what does this one opportunity need next?*** One trusted state per pursuit: the current stage, the signal that changed, the bottleneck, and a single next move routed to the right play. Submission is the midpoint of the record, not the end — that is when the market starts answering back.
+
+The skills in this repo are the playbook those workbenches route to: each one writes a recurring judgment — audience, positioning, claim ceiling, release QA — into a versioned, reusable contract, so the workflow survives handoff instead of living in one person's chat history. Full walkthrough with block-by-block lineage and the exhibit-skill catalog: [the two-workbench operating view](docs/two-workbench-operating-view.md).
+
 ## What I wrote—and what I still decide
 
 The public operating board compresses the work into six reading lenses: **Opportunity Intelligence**, **Audience & Routing**, **Positioning & Proof**, **Application Execution**, **Pipeline Operations**, and **Decision Intelligence**. They are not a complete skill taxonomy. The lenses group work by function; [the six human gates](docs/pipeline.md#the-six-gates) mark lifecycle decisions. They are two views of the same motion, not one-to-one roles.
@@ -35,6 +44,7 @@ Start with one trace, not the whole repository:
 - Compare a [fictional job post and routing brief](examples/routing-brief-sample.md) with the [contract that produced it](skills/jd-loop-routing/SKILL.md).
 - Inspect a [resume line that failed release QA](examples/resume-draft-fail-and-fix.md), then read the [grader](skills/resume-tailor/graders.md).
 - Follow a [market mechanism into a bounded Marketing capability claim](examples/marketing-reframe-run.md).
+- Read [the receipt of one brief driving two sync workflows](examples/one-brief-controlled-run.md) — including what stayed visibly incomplete.
 - See which misses became controls in the [failure log](examples/failure-guardrail-log.md), and audit moving figures in the [dated ledger](docs/evidence-ledger.md).
 
 The production system runs in Traditional Chinese. Public exhibits are translated, re-authored adaptations—not copies of private candidate or employer records. The publishing boundary itself is documented in [how this repo was sanitized](docs/how-this-repo-was-sanitized.md).

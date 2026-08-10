@@ -1,0 +1,19 @@
+# The same two gates the local pre-commit hook runs — one script each, no
+# dependencies. In CI the denylist gate runs with generic patterns only (the
+# sensitive-term list is git-ignored by design; see docs/how-this-repo-was-sanitized.md).
+name: public-checks
+on:
+  push:
+  pull_request:
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Denylist gate (generic patterns)
+        run: node tools/check-denylist.mjs
+      - name: Structure gate (required paths, links, anchors)
+        run: node tools/check-structure.mjs

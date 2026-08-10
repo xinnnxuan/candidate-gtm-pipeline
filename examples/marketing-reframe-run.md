@@ -1,6 +1,6 @@
 # Candidate GTM → Marketing capability — a public reframe run
 
-> **Checkable artifact.** This is a worked run of [`skills/marketing-reframe/SKILL.md`](../skills/marketing-reframe/SKILL.md) against the live Candidate Go-to-Market system described in this repository. The mechanisms are real; private records and people are not reproduced. Evidence levels use the skill contract's four canonical labels — *direct proof*, *analogous proof*, *method inspiration*, *forbidden claim* — with a qualifier noting where the mechanism runs; the final column carries the contract's `Do not borrow` field row by row.
+> **Checkable artifact.** This is a worked run of [`skills/03-positioning-messaging/marketing-reframe/SKILL.md`](../skills/03-positioning-messaging/marketing-reframe/SKILL.md) against the live Candidate Go-to-Market system described in this repository. The mechanisms are real; private records and people are not reproduced. Evidence levels use the skill contract's four canonical labels — *direct proof*, *analogous proof*, *method inspiration*, *forbidden claim* — with a qualifier noting where the mechanism runs; the final column carries the contract's `Do not borrow` field row by row.
 
 ---
 

@@ -10,7 +10,7 @@ Day to day, the pipeline is operated from two connected views — a portfolio wo
 ## Portfolio workbench — where should attention go?
 
 ```text
-[PORTFOLIO]                                      data as of: dated ledger
+[PORTFOLIO]                                    data as of 2026-08-01 (ledger)
 ── ATTENTION QUEUE ─ 3 campaigns need focus ──────────────
 ▸ interview-stage pursuit — reply with second-round slots   [open campaign →]
 ▸ interview-stage pursuit — resolve scheduling conflict     [open campaign →]
@@ -20,7 +20,8 @@ Day to day, the pipeline is operated from two connected views — a portfolio wo
 ── THIS WEEK'S CADENCE ─ quiet when normal ───────────────
 ── RECENT INTAKE ─ 7-day window; interview rows never drop ─
 ── LEARNING ─ the rule change currently in force ──────────
-rejection pattern → new targeting sweep → all 3 interviews from the shifted pool
+rejection pattern → new targeting sweep → all 3 interviews to date
+from the shifted pool (n=3 — an observation, not established cause)
 ```
 
 Block lineage — what each block reads, and the decision it serves:
@@ -36,7 +37,7 @@ Block lineage — what each block reads, and the decision it serves:
 ## Campaign workbench — what does this one need next?
 
 ```text
-[CAMPAIGN — Meridian Analytics · Revenue Operations Analyst]   (fictional)
+[CAMPAIGN — Exampleco (fictional) · Revenue Operations Analyst]
 ← back to portfolio                              stage: interview
 ── WHAT THIS ONE NEEDS NOW ───────────────────────────────
 bottleneck: second-round slots not yet sent
@@ -61,13 +62,13 @@ The desk does not do the work. It holds one trusted state, names the bottleneck,
 
 ## The plays the desks route to
 
-The workbenches decide; versioned skills execute. Each skill packages one recurring decision — the same idea as a team playbook entry. Four are published in this repo as re-authored exhibits:
+The workbenches decide; versioned skills execute. Each skill packages one recurring decision — the same idea as a team playbook entry. The full contract roster, grouped by expert role, is published in [the skill index](../skills/README.md); four examples:
 
 | Skill | The decision it packages | Fires when |
 |---|---|---|
-| [jd-loop-routing](../skills/jd-loop-routing/SKILL.md) | which reader pool a job post actually buys from, before any resume work | a new pursuit needs its strategy brief |
-| [resume-tailor](../skills/resume-tailor/EXCERPT.md) | how true evidence is re-ordered for one hiring manager's 30-second read | a campaign reaches the positioning stage |
-| [marketing-reframe](../skills/marketing-reframe/SKILL.md) | which bounded marketing capability a real workflow can honestly claim | evidence needs translation before a public surface |
-| [systemize-learnings](../skills/systemize-learnings/SKILL.md) | which of this cycle's corrections deserve to become standing rules | a campaign closes or a pattern repeats |
+| [audience-routing](../skills/02-audience-strategy/audience-routing/SKILL.md) | which reader pool a job post actually buys from, before any resume work | a new pursuit needs its strategy brief |
+| [buyer-ready-proof](../skills/03-positioning-messaging/buyer-ready-proof/SKILL.md) | how true evidence is re-ordered for one hiring manager's 30-second read | a campaign reaches the positioning stage |
+| [marketing-reframe](../skills/03-positioning-messaging/marketing-reframe/SKILL.md) | which bounded marketing capability a real workflow can honestly claim | evidence needs translation before a public surface |
+| [decision-learning](../skills/06-revenue-analytics/decision-learning/SKILL.md) | which of this cycle's corrections deserve to become standing rules | a campaign closes or a pattern repeats |
 
 **Boundary.** Personal-scale, read-only readouts over one person's live search — not an enterprise CRM, not autonomous agents, and not a claim of production campaign ownership. When a figure here disagrees with the ledger, [the ledger wins](evidence-ledger.md).

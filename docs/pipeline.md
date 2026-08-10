@@ -23,10 +23,6 @@ flowchart TB
     I -.->|"reviewed patterns can change the next sweep"| A
 ```
 
-![The pipeline is the product — each step asks a different question before the application moves forward](../assets/pipeline-seven-decisions.png)
-
-*Each gate wears a different expert lens and asks a different question. (This visual shows the earlier seven-decision layout; the current system runs six — outreach and follow-up merged.)*
-
 ## The same pipeline, in Marketing / GTM language
 
 This is an interpretation layer over the real runtime sequence, not a claim that a personal job search owns an enterprise revenue funnel.
@@ -46,7 +42,7 @@ The worked capability and evidence mapping is public in [the Marketing-reframe r
 
 ## The six gates
 
-The nine nodes above are where work happens; the six gates are where a human decides. The counts differ on purpose: a node is a stage of the pipeline, a gate is a judgment call that refuses to be delegated. The operating picture groups work into broader buyer-facing lenses; this table names lifecycle decisions. They connect by function, not by shared labels.
+The nine nodes above are where work happens; the six gates are where a human decides. The counts differ on purpose: a node is a runtime stage of the pipeline, a gate is a judgment call that refuses to be delegated. The operating picture groups these nine into the six broader buyer-facing stages of the Candidate GTM pipeline; this table names lifecycle decisions. They connect by function, not by shared labels.
 
 | # | Gate | The human call | Where it sits |
 |---|---|---|---|
@@ -61,7 +57,7 @@ In Marketing terms: qualification, segment investment, positioning sign-off, lau
 
 ## The pipeline, staffed
 
-Nine nodes, run by one person — because each node's judgment is written down as a named, versioned module. The operating board shows the functional lenses; this roster opens the modules that staff those functions. Skills own a judgment; commands are thin entry points that route into them (the separation shown in [exhibit 2b](../skills/systemize-learnings/retrospective.command.md)). These are real module names from the production system as of 2026-07-24, each tied to the one decision it improves:
+Nine nodes, run by one person — because each node's judgment is written down as a named, versioned module. The operating board shows the functional lenses; this roster opens the modules that staff those functions. Skills own a judgment; commands are thin entry points that route into them (the separation shown in [the retrospective command](../skills/06-revenue-analytics/decision-learning/retrospective.command.md)). These are real module names from the production system as of 2026-07-24, each tied to the one decision it improves:
 
 | Stage | Module | The judgment it owns |
 |---|---|---|
@@ -71,36 +67,37 @@ Nine nodes, run by one person — because each node's judgment is written down a
 | 1 · Market sweep | `manual-jd-intake` *(command)* | hand-carried JD text enters through the same governed write-back as everything else |
 | 2 · Intake funnel | `run-intake` *(command)* | batch recall → hard gates → AI skim under a written rubric → full-JD read → final gates |
 | 2 · Intake funnel | `jd-analyze` *(command)* | the full structured read of one JD before any downstream work runs |
+| 1–3 · Sweep → slate | [`opportunity-qualification`](../skills/01-market-research/opportunity-qualification/SKILL.md) *(skill · public edition)* | the qualification bar every opening must clear — full text before any cut, one shared company thesis, and a stop-point where recommendation is never admission |
 | 3 · Slate | `next-init` *(command)* | shortlist ranking plus a recommendation the human can veto in one word |
 | 3 · Slate | `init-app` *(command)* | the admission gate: tracker row + folder + full JD text, or the application doesn't exist |
 | 3 · Slate | `jd-progress` *(skill)* | the campaign board — readiness queues, post-apply tracking, and the single next action per role |
 | 4 · Stakeholder calibration | `linkedin-people` *(skill)* | who will actually read this application — likely hiring manager, routing owner, peer truth sources |
 | 4 · Stakeholder calibration | `linkedin-people-worker` *(command)* | the central calibration queue feeding stage 5 |
-| 4 · Stakeholder calibration | `linkedin-read` *(skill)* | authenticated page reads that must report what they could *not* see before anyone reasons from them |
+| 4 · Stakeholder calibration | `linkedin-read` *(skill)* | page reads that must report what they could *not* see before anyone reasons from them |
 | 4–7 · Mainline | `init-network` *(command)* | the front-stage mainline that walks one role from init to resume-ready |
-| 5 · Role routing | [`jd-loop-routing`](../skills/jd-loop-routing/SKILL.md) *(skill · exhibit 1)* | correct pool, must-prove, claim ceiling — written before the resume is ever opened |
-| 6 · Evidence translation | [`resume-tailor`](../skills/resume-tailor/EXCERPT.md) *(skill · exhibit 3a)* | translating real evidence into this reader's language without borrowing what can't be defended |
+| 5 · Role routing | [`audience-routing`](../skills/02-audience-strategy/audience-routing/SKILL.md) *(skill · public edition)* | correct pool, must-prove, claim ceiling — written before the resume is ever opened |
+| 6 · Evidence translation | [`buyer-ready-proof`](../skills/03-positioning-messaging/buyer-ready-proof/SKILL.md) *(skill · public edition)* | translating real evidence into this reader's language without borrowing what can't be defended |
 | 6 · Evidence translation | `resume-ssot` *(skill)* | single entry point to the source-of-truth resumes — read, audit, or promote wording back through one door |
 | 6 · Evidence translation | `resume-fit-page` *(skill)* | one-page PDF geometry: propose a single trim, then wait for go |
 | 6 · Evidence translation | `resume-export` *(skill)* | template sync, PDF export, page-count validation |
 | 6 · Evidence translation | `cl-adapt` / `cl-export` *(skills — off the default path)* | cover letters activate only when a platform requires one or the operator asks; by ruling, they gate nothing |
-| 7 · Cold-read validation | [`graders`](../skills/resume-tailor/graders.md) *(exhibit 3b)* | a 7-check exit gate that points, never re-edits |
+| 7 · Cold-read validation | [`graders`](../skills/03-positioning-messaging/buyer-ready-proof/graders.md) *(public edition)* | a 7-check exit gate that points, never re-edits |
 | 7 · Cold-read validation | `resume-cross-audit` *(command)* | generates an audit prompt for a second, unaffiliated model — a reader with no stake in the draft |
 | 7 · Cold-read validation | `resume-finalize` *(command)* | the finalize entry: nothing ships from a draft state |
 | 8 · Release | `apply-mode` *(skill)* | browser-assisted form work that always stops before Submit — the click is human |
-| 8 · Release | `apply-check` *(skill)* | final form check against one fixed personal-data source of truth |
+| 8 · Release | [`application-release-qa`](../skills/04-marketing-operations/application-release-qa/SKILL.md) *(skill · public edition)* | final form check against one fixed personal-data source of truth |
 | 9 · Status & write-back | `update-status` *(command)* | one entry point for state changes — no hand-edited fields |
-| 9 · Status & write-back | `email-status-sync` *(skill)* | inbox → classified signals → dry-run → confirmed write-back; read-only on the mailbox itself ([seen running](../examples/annotated-session.md)) |
-| 9 · Status & write-back | `linkedin-networking-sync` *(skill)* | sent / pending / accepted / replied as a ledger, not a memory ([seen running](../examples/one-brief-controlled-run.md)) |
-| 9 · Status & write-back | `linkedin-first-connect` / `linkedin-connect` *(skills)* | outreach segmented by reader — recruiter, hiring manager, peer — drafted for review, never auto-sent |
-| 9 · Status & write-back | [`systemize-learnings`](../skills/systemize-learnings/SKILL.md) *(skill · exhibit 2a)* | which lessons earn their way into long-term rules — the default answer is *don't* |
-| 9 · Status & write-back | [`retrospective`](../skills/systemize-learnings/retrospective.command.md) *(command · exhibit 2b)* | the closing entry point that routes into it |
+| 9 · Status & write-back | [`inbox-to-pipeline-sync`](../skills/05-lifecycle-operations/inbox-to-pipeline-sync/SKILL.md) *(skill · public edition)* | inbox → classified signals → dry-run → confirmed write-back; read-only on the mailbox itself ([seen running](../examples/annotated-session.md)) |
+| 9 · Status & write-back | [`relationship-ledger-sync`](../skills/05-lifecycle-operations/relationship-ledger-sync/SKILL.md) *(skill · public edition)* | sent / pending / accepted / replied as a ledger, not a memory ([seen running](../examples/one-brief-controlled-run.md)) |
+| 9 · Status & write-back | `linkedin-first-connect` / [`relationship-follow-through`](../skills/05-lifecycle-operations/relationship-follow-through/SKILL.md) *(skills · public edition for the follow-through half)* | outreach segmented by reader — recruiter, hiring manager, peer — drafted for review, never auto-sent |
+| 9 · Status & write-back | [`decision-learning`](../skills/06-revenue-analytics/decision-learning/SKILL.md) *(skill · public edition)* | which lessons earn their way into long-term rules — the default answer is *don't* |
+| 9 · Status & write-back | [`retrospective`](../skills/06-revenue-analytics/decision-learning/retrospective.command.md) *(command · public edition)* | the closing entry point that routes into it |
 | 9 · Status & write-back | `phrase-capture` *(skill)* | language that outperformed gets captured the day it appears, before it evaporates |
 | Downstream | `interview-script` *(skill)* | the same positioning, extended into an interview narrative that survives follow-up questions |
-| Conditional calibration | [`marketing-reframe`](../skills/marketing-reframe/SKILL.md) *(skill · exhibit 4)* | which Marketing / GTM capability a true mechanism can defend, at which evidence level, for which buyer decision |
+| Conditional calibration | [`marketing-reframe`](../skills/03-positioning-messaging/marketing-reframe/SKILL.md) *(skill · public edition)* | which Marketing / GTM capability a true mechanism can defend, at which evidence level, for which buyer decision |
 | Public surfaces | `pipeline-page` / `linkedin-profile-refresh` / `candidate-materials-edit` *(skills)* | the public surfaces are governed like the pipeline: one source of truth each, no drift between them |
 
-This roster names 23 of the 44 skills and 13 of the 26 commands live as of 2026-07-22 (exact dated counts: [evidence ledger](evidence-ledger.md)). What's missing is deliberate: sweep presets carry internal codenames, some modules are vendor- or course-specific utilities, and a few encode private research surfaces. Retirement is normal here — the most recent cut was `hiring-memo` (2026-07-10), and the most recent rename widened `ready-to-apply` into `jd-progress` (2026-07-24), from a readiness queue into full campaign progress. More modules isn't better; owned judgments are.
+This roster deliberately names only part of the live inventory (exact dated counts: [evidence ledger](evidence-ledger.md)). What's missing is deliberate: sweep presets carry internal codenames, some modules are vendor- or course-specific utilities, and a few encode private research surfaces. Retirement is normal here — the most recent cut was `hiring-memo` (2026-07-10), and the most recent rename widened `ready-to-apply` into `jd-progress` (2026-07-24), from a readiness queue into full campaign progress. More modules isn't better; owned judgments are.
 
 ## The handoff line (stage 5 → 6)
 

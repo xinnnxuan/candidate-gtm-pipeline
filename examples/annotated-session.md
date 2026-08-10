@@ -1,6 +1,6 @@
 # An annotated session — the method in motion
 
-> **Checkable artifact.** Re-authored from a real lifecycle close-out in the production system (which runs in Traditional Chinese): translated, compressed, and generalized — companies and message text are stand-ins; the module name, tier rules, and every decision beat are the production ones. The module shown, `email-status-sync`, is stage 9 in [the Candidate GTM pipeline](../docs/pipeline.md#the-pipeline-staffed). The other artifacts show decisions and outputs; this one shows CRM state and measurement honesty in motion: a gate prevents a false conversion-state write, a human separates *rejected* from *role closed*, and verified state lands in the same turn.
+> **Checkable artifact.** Re-authored from a real lifecycle close-out in the production system (which runs in Traditional Chinese): translated, compressed, and generalized — companies and message text are stand-ins; the module name, tier rules, and every decision beat are the production ones. The module shown, [`inbox-to-pipeline-sync`](../skills/05-lifecycle-operations/inbox-to-pipeline-sync/SKILL.md), is runtime stage 9 in [the Candidate GTM pipeline](../docs/pipeline.md#the-pipeline-staffed) and has a published contract. The other artifacts show decisions and outputs; this one shows CRM state and measurement honesty in motion: a gate prevents a false conversion-state write, a human separates *rejected* from *role closed*, and verified state lands in the same turn.
 
 ---
 
@@ -8,7 +8,7 @@
 
 > **Operator:** sync the inbox.
 >
-> **System:** Running `email-status-sync`. Contract loaded — the mailbox is read-only (no deleting, no marking read, no replies, ever); every status signal is classified into **AUTO / REVIEW / unmatched**; nothing writes to the tracker until you've seen the dry-run. Reading messages since the last sync…
+> **System:** Running `inbox-to-pipeline-sync`. Contract loaded — the mailbox is read-only (no deleting, no marking read, no replies, ever); every status signal is classified into **AUTO / REVIEW / unmatched**; nothing writes to the tracker until you've seen the dry-run. Reading messages since the last sync…
 
 **What to notice:** the invocation costs one line because the judgment was paid for earlier. Everything the system just announced — the read-only boundary, the tiers, the dry-run-first rule — is written in the skill, versioned, and loaded on invocation; the operator doesn't re-negotiate it per session, and can't silently lose it either. This is the Reuse step of [the loop](../docs/the-loop.md) as it feels in practice: the run starts from the tightened rule, not from a fresh prompt.
 
@@ -49,7 +49,7 @@
 >
 > **System:** No. #2 and #3 are existing guardrails doing their job, not new failure modes — nothing here earns a rule change. Default is don't write.
 
-**What to notice:** *done* happened inside the turn — artifact, canonical state, downstream continuity, together — which is [the constitution's definition of done](../constitution/CONSTITUTION.md) at work: state is a field written now, not a memory to reconcile later. The read-back makes "written" mean *verified written*; the processed-marks make the work idempotent across machines; the gated proposal is a write that was allowed to ask but not to act. And the last exchange is [the write-back triage](../skills/systemize-learnings/SKILL.md) returning its most common and least celebrated verdict: **no** — a system that adds a rule after every session isn't learning, it's sedimenting.
+**What to notice:** *done* happened inside the turn — artifact, canonical state, downstream continuity, together — which is [the constitution's definition of done](../constitution/CONSTITUTION.md) at work: state is a field written now, not a memory to reconcile later. The read-back makes "written" mean *verified written*; the processed-marks make the work idempotent across machines; the gated proposal is a write that was allowed to ask but not to act. And the last exchange is [the write-back triage](../skills/06-revenue-analytics/decision-learning/SKILL.md) returning its most common and least celebrated verdict: **no** — a system that adds a rule after every session isn't learning, it's sedimenting.
 
 ---
 

@@ -1,6 +1,6 @@
 # Sample routing brief — a real run on a fictional JD
 
-> **Checkable artifact.** The job post below is **fictional** (it implicates no real company). The routing brief that follows is a genuine run of `skills/jd-loop-routing/SKILL.md` against it — market qualification, audience / pool diagnosis, must-prove, positioning direction, and claim ceiling produced before any candidate evidence was read. You can audit the skill by checking each field back against the post.
+> **Checkable artifact.** The job post below is **fictional** (it implicates no real company). The routing brief that follows is a genuine run of `skills/02-audience-strategy/audience-routing/SKILL.md` against it — market qualification, audience / pool diagnosis, must-prove, positioning direction, and claim ceiling produced before any candidate evidence was read. You can audit the skill by checking each field back against the post.
 
 ---
 

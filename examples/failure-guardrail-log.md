@@ -6,7 +6,7 @@
 
 ## 1 · The market that looked cold
 
-**The failure.** The market-sweep stage runs batches of search queries against live job boards and summarizes the haul. One week the summary came back thin — and read exactly like a cold market. It wasn't: several queries had *failed* upstream (source layout change), returned zero rows, and the summary rendered those zeros as facts. Strategy discussion started from "the lane is drying up" before anyone checked the plumbing.
+**The failure.** The market-sweep stage runs batches of search queries against live job boards and summarizes the haul. One week the summary came back thin — and read exactly like a cold market. It wasn't: several queries had *failed* upstream (a source had become unavailable), returned zero rows, and the summary rendered those zeros as facts. Strategy discussion started from "the lane is drying up" before anyone checked the plumbing.
 
 **What it cost.** Hours of mis-aimed prioritization — and near-miss damage to a lane decision that would have deprioritized a healthy market.
 
@@ -34,7 +34,7 @@
 
 **What it cost.** Caught before send — by review, i.e. by luck. Luck is not a control.
 
-**The rule now.** Two structural changes, both visible in this repository. The routing contract gained two mandatory fields — `cannot_borrow` (the claim ceiling: what may not be claimed without direct evidence) and `high_risk_nouns` (real nouns in the role that must not become ownership claims) — so the ceiling is written down *before* drafting starts, per role, by a stage that has never seen the candidate's evidence. And the exit gate ([graders.md](../skills/resume-tailor/graders.md), check 3) tests every prominent claim against that ceiling, with a named fail signal: *the most JD-like sentence is also the least defensible one.*
+**The rule now.** Two structural changes, both visible in this repository. The routing contract gained two mandatory fields — `cannot_borrow` (the claim ceiling: what may not be claimed without direct evidence) and `high_risk_nouns` (real nouns in the role that must not become ownership claims) — so the ceiling is written down *before* drafting starts, per role, by a stage that has never seen the candidate's evidence. And the exit gate ([graders.md](../skills/03-positioning-messaging/buyer-ready-proof/graders.md), check 3) tests every prominent claim against that ceiling, with a named fail signal: *the most JD-like sentence is also the least defensible one.*
 
 **The analytics parallel.** Overclaiming a metric: the chart implies causality the data doesn't carry, and it presents wonderfully right up until someone asks how it was measured. Same discipline both ways: **every claim ships with its own boundary, recorded at the same time as the claim — not patched after the challenge.**
 

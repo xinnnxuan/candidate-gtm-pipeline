@@ -1,6 +1,6 @@
 # Sample exit-gate run — a resume line that fails, and the fix
 
-> **Checkable artifact.** A worked conversion-QA run ([`skills/resume-tailor/graders.md`](../skills/resume-tailor/graders.md)) against a draft resume line. Everything here is **fictional** — the candidate evidence is invented and the target role is the same fictional job post as [`routing-brief-sample.md`](routing-brief-sample.md), so the artifacts interlock: market / audience routing sets the claim ceiling, message development violates it, and release QA catches it. The failure is common and expensive — **the strongest hook becomes the least defensible promise.**
+> **Checkable artifact.** A worked conversion-QA run ([`skills/03-positioning-messaging/buyer-ready-proof/graders.md`](../skills/03-positioning-messaging/buyer-ready-proof/graders.md)) against a draft resume line. Everything here is **fictional** — the candidate evidence is invented and the target role is the same fictional job post as [`routing-brief-sample.md`](routing-brief-sample.md), so the artifacts interlock: market / audience routing sets the claim ceiling, message development violates it, and release QA catches it. The failure is common and expensive — **the strongest hook becomes the least defensible promise.**
 
 ---
 

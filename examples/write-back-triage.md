@@ -1,6 +1,6 @@
 # Sample write-back triage — a close-out, reconstructed
 
-> **Checkable artifact.** A worked run of `skills/systemize-learnings/SKILL.md` at the close of a reconstructed, generalized market-calibration session. Four candidate learnings enter the four-question framework; one recurring signal earns a write-back, one parks as a plan, and two are rejected as premature or harmful. This is the closed-loop discipline behind the public claim that results change the next cycle — without turning every observation into a targeting rule.
+> **Checkable artifact.** A worked run of `skills/06-revenue-analytics/decision-learning/SKILL.md` at the close of a reconstructed, generalized market-calibration session. Four candidate learnings enter the four-question framework; one recurring signal earns a write-back, one parks as a plan, and two are rejected as premature or harmful. This is the closed-loop discipline behind the public claim that results change the next cycle — without turning every observation into a targeting rule.
 >
 > Note the scoreboard: **one of four survived.** That ratio is the skill working, not failing — the default is DON'T write.
 

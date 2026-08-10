@@ -1,6 +1,6 @@
 # From one operator to a team
 
-> **Public edition.** The solo system described in present tense here is the one running today — the same system the rest of this repository exhibits and audits. The team-scale design is adapted from a private architecture plan (2026-07-10) and carries exactly that status: **designed, and being proven on live data now — not deployed.** Every claim below keeps that register. One misread to rule out up front: nothing on this page says I have led or enabled a team with this method. That claim would be the wrong kind of proof anyway — what transfers is a method you can audit, not a war story you'd have to take on faith.
+> **Public edition.** The solo system described in present tense here is the one running today — the same system the rest of this repository exhibits and audits. The team-scale design is adapted from a private architecture plan (2026-07-10) and carries exactly that status: **designed, and staged for proof on live data — not deployed.** Every claim below keeps that register. One misread to rule out up front: nothing on this page says I have led or enabled a team with this method. That claim would be the wrong kind of proof anyway — what transfers is a method you can audit, not a war story you'd have to take on faith.
 
 Everything else in this repository shows one operator running a Candidate Go-to-Market motion: qualify the market, map the decision audience, position defensible value, keep lifecycle state clean, and turn response into the next decision. A fair reader finishes it with one question left: **so what would you actually do inside my Marketing / GTM team?**
 
@@ -8,7 +8,7 @@ The compressed answer:
 
 > I've already run this pattern solo: a Candidate GTM pipeline where market signals become qualified attention, buyer-specific proof, governed touchpoints, clean CRM state, and next-cycle learning. Walking into your team, I would start with the same operating question — which recurring Marketing judgment should become shared, reviewable, and safe for AI to assist?
 
-(HubSpot is the concrete case because that's where my own live proving ground runs; the discipline is CRM-agnostic. And *proving* is a precise word here — the status paragraph below says exactly what runs today and what doesn't.)
+(HubSpot is the concrete case because that's where my own live proving ground runs; the discipline is CRM-agnostic. And *staged* is a precise word here — the status paragraph below says exactly what runs today and what doesn't.)
 
 The rest of this page unpacks that sentence — what a Marketing / GTM team gets, what lands on day one, what gets written in the first weeks, and what stands between AI and the CRM — under the same claim boundaries as the rest of the repo.
 
@@ -33,7 +33,7 @@ So the transfer is not "install my system." It is making three moves explicit �
 2. **Judgment written where it can be reviewed, versioned, and tightened.** The skills move.
 3. **One gate between AI and the system of record.** The gateway move.
 
-What does *not* transfer: my skills. [The README boundary](../README.md#what-i-dont-claim) draws this line, and this page is built around it, not over it — the skills here encode *my* judgment about *my* pipeline; installing them in your team would just be a framework with extra steps. What transfers is the method for encoding **your team's** judgment, plus the governance shapes that make it safe to act on once encoded.
+What does *not* transfer: my skills. [The README boundary](../README.md#what-this-proves--and-doesnt) draws this line, and this page is built around it, not over it — the skills here encode *my* judgment about *my* pipeline; installing them in your team would just be a framework with extra steps. What transfers is the method for encoding **your team's** judgment, plus the governance shapes that make it safe to act on once encoded.
 
 ## Day one — one shared context
 
@@ -44,7 +44,7 @@ Before any AI session touches team work, it reads one governance file. Mine is [
 - what **done** means: artifact landed *and* state written back *and* the next person can continue — in the same turn;
 - what may never be claimed or written without a named human.
 
-This is not a prompt library and not a wiki. It is the smallest set of rules that otherwise live in everyone's head and diverge quietly — kept small the same way this repo keeps its own rules small: every line has to earn its place, and new lessons earn their way in through triage ([the default answer is don't](../skills/systemize-learnings/SKILL.md)).
+This is not a prompt library and not a wiki. It is the smallest set of rules that otherwise live in everyone's head and diverge quietly — kept small the same way this repo keeps its own rules small: every line has to earn its place, and new lessons earn their way in through triage ([the default answer is don't](../skills/06-revenue-analytics/decision-learning/SKILL.md)).
 
 Day one's deliverable is deliberately modest: that file, drafted from listening, small enough to actually be loaded into every session — because a shared context nobody loads is a poster.
 
@@ -63,7 +63,7 @@ The success test is not "the team uses AI now." It is that a qualification rule,
 
 The system of record is where governance stops being philosophy. A CRM that ten well-meaning sessions write into directly becomes unauditable — not because anyone lied, but because no one can say which value came from whom, under which rule, reviewed by which human.
 
-The design I've committed to — and the one being proven on my own live data now: **no AI write reaches the CRM except through one gateway.** For every proposed write, the gateway must know:
+The design I've committed to — and the one now staged for proof against my own live data: **no AI write reaches the CRM except through one gateway.** It is the team-scale version of the write-authority tiers the solo system already runs ([decision rights](decision-rights.md)). For every proposed write, the gateway must know:
 
 - **identity** — which agent, running which skill at which version, from which evidence;
 - **authority** — a field-level allowlist: which properties this agent may even *propose*; fields a human has confirmed stay writable by humans only;
@@ -73,7 +73,7 @@ The design I've committed to — and the one being proven on my own live data no
 
 No agent gets an unrestricted token. Not because agents are untrustworthy in some dramatic sense — because ungoverned writes are unattributable, and unattributable state is how a team stops trusting its own CRM.
 
-Status, precisely: my solo pipeline already projects into **my own** live HubSpot portal under review discipline — privacy-screened summaries only, read-back after every write, drift audits, and gated record classes landing as proposals rather than writes ([seen running in the annotated session](../examples/annotated-session.md)). The full gateway is one stage earlier: the design is committed, and its proof is staged against that same live portal — shadow mode first, in which the gateway may only emit auditable write *intents* (same identity, authority, and conflict checks; zero writes), with its control cases written into the acceptance bar before any apply is allowed: an unauthorized write, a duplicate replay, a rate-limit burst, a source conflict. **Designed, being proven on live data; not deployed.** When that sentence changes, it will change because the evidence did — the same [ledger policy](evidence-ledger.md) the rest of this repo runs on.
+Status, precisely: my solo pipeline already projects into **my own** live HubSpot portal under review discipline — privacy-screened summaries only, read-back after every write, drift audits, and gated record classes landing as proposals rather than writes ([seen running in the annotated session](../examples/annotated-session.md)). The full gateway is one stage earlier: the design is committed, and its proof is staged against that same live portal — shadow mode first, in which the gateway may only emit auditable write *intents* (same identity, authority, and conflict checks; zero writes), with its control cases written into the acceptance bar before any apply is allowed: an unauthorized write, a duplicate replay, a rate-limit burst, a source conflict. **Designed, staged for proof on live data; not deployed.** When that sentence changes, it will change because the evidence did — the same [ledger policy](evidence-ledger.md) the rest of this repo runs on.
 
 ## What gets to be true — raw → review → promoted
 
@@ -99,7 +99,7 @@ If the ladder looks abstract, it isn't — it already runs, solo, at skill level
 ## What this page is NOT claiming
 
 - **Not team history.** I have not run this method with a team. This page is a design with a live proving ground, written inside a repo whose whole discipline is that claims carry their own boundaries — which is exactly why I can say that plainly and expect the rest to stand.
-- **Not your stack's administrator.** Same boundary as [the README](../README.md#what-i-dont-claim): my CRM and marketing-tooling exposure is workflow-level, on my own live portal. No one's production instance is being claimed here.
+- **Not your stack's administrator.** Same boundary as [the README](../README.md#what-this-proves--and-doesnt): my CRM and marketing-tooling exposure is workflow-level, on my own live portal. No one's production instance is being claimed here.
 - **Not your campaign or revenue owner.** The transferable proof is upstream Marketing judgment, shared context, state discipline, measurement honesty, and learning-loop design — not a claim to past ownership of enterprise campaigns, attribution, lifecycle, or revenue.
 - **Not a rollout script.** Inside a real team this starts smaller than this page — reading how the team actually works before writing anything down. The sequence above is the method's order (context → judgment → gateway), not a week-by-week promise made from outside the building.
 

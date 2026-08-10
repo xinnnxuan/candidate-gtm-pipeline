@@ -9,3 +9,9 @@ node "$(git rev-parse --show-toplevel)/tools/check-denylist.mjs" || {
   echo "a false positive by tightening the pattern in .denylist.local."
   exit 1
 }
+node "$(git rev-parse --show-toplevel)/tools/check-structure.mjs" || {
+  echo ""
+  echo "Commit blocked by the structure gate: a required path, link, or anchor"
+  echo "is broken. CI runs the same script — fix it here, not there."
+  exit 1
+}

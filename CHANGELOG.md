@@ -2,6 +2,12 @@
 
 This log records one thing: a failure or a hostile read, and the method change it forced. It is not a commit history, and it deliberately excludes routine edits — every entry here passed [the write-back triage](skills/06-revenue-analytics/decision-learning/SKILL.md), where the default answer is *don't*.
 
+## 2026-08-11 — a release gate had rules, but no independent public test
+
+**The failure.** Application Release QA claimed a three-verdict gate, but a public reader could inspect only a narrated fictional case. There was no independent rubric showing which factual, semantic, or authority failure blocks release — and no public-safe run proving all three verdicts stay distinct.
+
+**The change.** Stage 04 now publishes a [5-check release grader](skills/04-marketing-operations/application-release-qa/graders.md) and [three fictional-by-construction fixtures](examples/application-release-qa-evaluation.md): ready, fix-first, and unresolved intent. The grader points without editing, and every run ends before Submit, so stronger verification does not widen automation authority.
+
 ## 2026-08-10 — the roster was legible, the verification wasn't
 
 **The failure.** A reader who trusted a skill's description had no path to check it: contracts carried no pointer to a case, an evaluation, or the rule changes behind them, and three contracts still wore private-system codenames. Understanding was one click away; verification wasn't.

@@ -41,7 +41,7 @@ I write the brief, decide what enters the pipeline, review the handoffs, and sto
 Nine contracts are published — six stage leads (above) plus three related contracts:
 
 - [Marketing Reframe](skills/03-positioning-messaging/marketing-reframe/SKILL.md) — how a true mechanism earns Marketing language, at which evidence level *(stage 03)*
-- [Inbox-to-Pipeline Sync](skills/05-lifecycle-operations/inbox-to-pipeline-sync/SKILL.md) — inbox signals to governed lifecycle state; bad news may close itself, good news always waits *(stage 05)*
+- [Inbox-to-Pipeline Sync](skills/05-lifecycle-operations/inbox-to-pipeline-sync/SKILL.md) — only verified closing states auto-land; every positive signal waits for the operator *(stage 05)*
 - [Relationship Ledger Sync](skills/05-lifecycle-operations/relationship-ledger-sync/SKILL.md) — relationship state as a ledger, not a memory *(stage 05)*
 
 Every contract is a **re-authored public edition** of a module running in production, opens with a verification strip (status, decision, write authority, case / eval / change links), and ships an evidence index beside it. The full verification matrix — judgment, authority, case, evaluation, and maturity per skill: **[the skill roster](skills/README.md)**.
@@ -52,9 +52,9 @@ Every contract is a **re-authored public edition** of a module running in produc
 
 Four structural reasons, each with an open door:
 
-**Authority is tiered, in writing.** For every judgment it is decided in advance whether the outcome may land automatically, must wait for me, or may never be automated — bad news may close itself; good news always waits; nothing external is ever sent by the system. The one-page map: **[decision rights](docs/decision-rights.md)**.
+**Authority is tiered, in writing.** Every judgment is assigned in advance to automatic internal write-back, held human decision, or never-automated external action. The one-page map: **[decision rights](docs/decision-rights.md)**.
 
-**Judgments are evaluated, and coverage is stated honestly.** A published grader with a published failing run, receipts of real runs, adversarial cold reads before every publish wave, and machine gates on every commit — with the skills that have *no* dedicated evaluation named as such: **[the evaluation registry](evals/README.md)**.
+**Judgments are evaluated, and coverage is stated honestly.** Two published exit-gate graders with public-safe runs, receipts of real runs, adversarial cold reads before every publish wave, and machine gates on every commit — with the skills that have *no* dedicated evaluation named as such: **[the evaluation registry](evals/README.md)**.
 
 **Numbers carry dates and boundaries.** Evergreen copy uses floors; exact counts live dated in **[the evidence ledger](docs/evidence-ledger.md)**, where drift is visible instead of silent. Day to day, the loop runs from [two connected workbenches](docs/two-workbench-operating-view.md).
 

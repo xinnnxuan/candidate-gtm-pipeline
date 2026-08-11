@@ -18,8 +18,8 @@ description: >
 | **Reads** | Live form state (fields, parse output, or the actual page) · one canonical facts source |
 | **Produces** | A must-fix / suggest / keep readout and exactly one of three verdicts |
 | **Write authority** | Verifies only; the Submit click is human, always |
-| **See it run** | [Case · stage 04](../../../cases/one-opportunity-through-six-stages/04-marketing-operations.md) |
-| **Evaluation** | Repo-level gates and cold reads ([registry](../../../evals/README.md)); no dedicated grader yet |
+| **See it run** | [Case · stage 04](../../../cases/one-opportunity-through-six-stages/04-marketing-operations.md) · [three public-safe release fixtures](../../../examples/application-release-qa-evaluation.md) |
+| **Evaluation** | [5-check release grader](graders.md), exercised against ready, fix-first, and unresolved-intent fixtures ([registry](../../../evals/README.md)) |
 | **Change receipts** | [CHANGELOG](../../../CHANGELOG.md) |
 
 ## The judgment, in one screen

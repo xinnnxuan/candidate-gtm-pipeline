@@ -45,6 +45,8 @@ const REQUIRED = [
   "skills/04-marketing-operations/README.md",
   "skills/04-marketing-operations/application-release-qa/SKILL.md",
   "skills/04-marketing-operations/application-release-qa/EVIDENCE.md",
+  "skills/04-marketing-operations/application-release-qa/graders.md",
+  "examples/application-release-qa-evaluation.md",
   "skills/05-lifecycle-operations/README.md",
   "skills/05-lifecycle-operations/relationship-follow-through/SKILL.md",
   "skills/05-lifecycle-operations/relationship-follow-through/EVIDENCE.md",

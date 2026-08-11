@@ -4,7 +4,7 @@
 
 ## The four evaluation layers
 
-**1 · Exit-gate graders.** A written rubric that checks a specific artifact class before release, points to the owning rule on failure, and never re-edits. One is published: [the 7-check resume exit gate](../skills/03-positioning-messaging/buyer-ready-proof/graders.md), with [a published failing-and-passing run](../examples/resume-draft-fail-and-fix.md).
+**1 · Exit-gate graders.** A written rubric that checks a specific artifact class before release, points to the owning rule on failure, and never re-edits. Two are published: [the 7-check resume exit gate](../skills/03-positioning-messaging/buyer-ready-proof/graders.md), with [a failing-and-passing run](../examples/resume-draft-fail-and-fix.md); and [the 5-check application release gate](../skills/04-marketing-operations/application-release-qa/graders.md), exercised against [ready, fix-first, and unresolved-intent fixtures](../examples/application-release-qa-evaluation.md).
 
 **2 · Published run receipts.** Real runs, re-authored or fictional-by-construction, that let a reader check a contract against its own behavior: [the annotated session](../examples/annotated-session.md), [the controlled-run receipt](../examples/one-brief-controlled-run.md), [the scored write-back triage](../examples/write-back-triage.md), [the sample routing brief](../examples/routing-brief-sample.md), and [the six-stage case](../cases/one-opportunity-through-six-stages/README.md).
 
@@ -20,7 +20,7 @@
 | [Audience & Routing](../skills/02-audience-strategy/audience-routing/SKILL.md) | Errors surface at the downstream exit gate | [Sample brief](../examples/routing-brief-sample.md) · [Case · 02](../cases/one-opportunity-through-six-stages/02-audience-strategy.md) |
 | [Buyer-Ready Proof](../skills/03-positioning-messaging/buyer-ready-proof/SKILL.md) | **[7-check grader](../skills/03-positioning-messaging/buyer-ready-proof/graders.md)** | [Fail-and-fix](../examples/resume-draft-fail-and-fix.md) · [Case · 03](../cases/one-opportunity-through-six-stages/03-positioning-messaging.md) |
 | [Marketing Reframe](../skills/03-positioning-messaging/marketing-reframe/SKILL.md) | Own quality gate, applied in its run | [Worked run](../examples/marketing-reframe-run.md) |
-| [Application Release QA](../skills/04-marketing-operations/application-release-qa/SKILL.md) | — none yet | [Case · 04](../cases/one-opportunity-through-six-stages/04-marketing-operations.md) |
+| [Application Release QA](../skills/04-marketing-operations/application-release-qa/SKILL.md) | **[5-check release grader](../skills/04-marketing-operations/application-release-qa/graders.md)** | [Three verdict fixtures](../examples/application-release-qa-evaluation.md) · [Case · 04](../cases/one-opportunity-through-six-stages/04-marketing-operations.md) |
 | [Relationship Follow-Through](../skills/05-lifecycle-operations/relationship-follow-through/SKILL.md) | — none yet | [Controlled run](../examples/one-brief-controlled-run.md) · [Case · 05](../cases/one-opportunity-through-six-stages/05-lifecycle-operations.md) |
 | [Inbox-to-Pipeline Sync](../skills/05-lifecycle-operations/inbox-to-pipeline-sync/SKILL.md) | — none yet | [Annotated session](../examples/annotated-session.md) · [Controlled run](../examples/one-brief-controlled-run.md) |
 | [Relationship Ledger Sync](../skills/05-lifecycle-operations/relationship-ledger-sync/SKILL.md) | — none yet | [Controlled run](../examples/one-brief-controlled-run.md) |

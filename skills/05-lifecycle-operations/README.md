@@ -7,7 +7,7 @@
 | **Inputs** | Inbound mail · own-account relationship surfaces · the relationship ledger and tracker state |
 | **The decision** | *What changed, stalled, or needs action now?* |
 | **Handoff** | Current relationship state plus the ranked next human action; outcomes and losses flow to [06 · Revenue Analytics](../06-revenue-analytics/README.md) |
-| **Human authority** | Bad news may close itself; good news always waits. Nothing is ever sent by the system |
+| **Human authority** | Only verified closing states may auto-land; every positive signal and every outbound action waits for Johanna |
 
 ## Skills at this stage
 

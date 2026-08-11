@@ -16,7 +16,7 @@
 
 **Week two: a warm signal — held.** A peer contact connected during outreach replies with something substantive. The thread moves to *reply now*: a human answer to what they actually said, drafted for review with the full stored conversation beside it. Nothing sends itself. The ledger, meanwhile, records the acceptance and reply as evidence-backed transitions — and reports this round's collection pass as complete, because a partial pass would have said so out loud.
 
-**Week five: the rejection — the one write that lands.** A rejection template with strong closing language, matching exactly one tracked application, still open. Every condition of the write gate holds: high confidence, unique match, formal outcome path, read-back verification. The record closes itself with a dated state — *bad news may close itself; good news always waits.* Had the same email arrived ambiguous, or matched two pursuits, it would have stopped at the operator.
+**Week five: the rejection — the one write that lands.** A rejection template with strong closing language, matching exactly one tracked application, still open. Every condition of the write gate holds: high confidence, unique match, formal outcome path, read-back verification. The record closes itself with a dated state. Had the same email arrived ambiguous, positive, or matched to two pursuits, it would have stopped at the operator.
 
 ## The handoff
 

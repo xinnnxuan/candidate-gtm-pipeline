@@ -15,7 +15,7 @@
 |---|---|---|
 | **[Application Release QA](application-release-qa/SKILL.md)** | lead | Release QA against one fixed facts source; eligibility questions answered as asked; a three-verdict release call |
 
-**Recommended start:** open [the lead contract](application-release-qa/SKILL.md), then follow one release through [the six-stage case](../../cases/one-opportunity-through-six-stages/04-marketing-operations.md).
+**Recommended start:** open [the lead contract](application-release-qa/SKILL.md), test its boundary against [the 5-check grader and three verdict fixtures](application-release-qa/graders.md), then follow one release through [the six-stage case](../../cases/one-opportunity-through-six-stages/04-marketing-operations.md).
 
 ---
 

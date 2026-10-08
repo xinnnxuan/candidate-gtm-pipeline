@@ -15,7 +15,7 @@ Three doors, by how much time you have:
 2. **Open one contract** — [Buyer-Ready Proof](skills/03-positioning-messaging/buyer-ready-proof/SKILL.md) is the deepest-verified: the contract, [its 7-check exit gate](skills/03-positioning-messaging/buyer-ready-proof/graders.md), and [a line that failed the gate, with the fix](examples/resume-draft-fail-and-fix.md). *~3 minutes.*
 3. **Check one failure-to-control** — [the changelog](CHANGELOG.md) records which failure changed which public method; [the failure log](examples/failure-guardrail-log.md) holds the founding receipts. *~2 minutes.*
 
-Want the candidate story first? [Meet Johanna](https://johannafan.com/?src=governed-ai-workflow).
+Want the candidate story first? [Meet Johanna on LinkedIn](https://www.linkedin.com/in/xxu09).
 
 ## See one opportunity move
 
@@ -90,9 +90,8 @@ Three failures changed the method: failed collection queries once looked like a 
 
 **[Send me the JD you're hiring for](https://www.linkedin.com/in/xxu09) — I'll send back how I'd read it.**
 
-- **Meet the candidate:** [johannafan.com](https://johannafan.com/?src=governed-ai-workflow)
+- **Meet the candidate:** [LinkedIn](https://www.linkedin.com/in/xxu09)
 - **Read the system:** you are here
-- **See it run:** [the live pipeline](https://johannafan.com/?src=governed-ai-workflow#overview)
 
 ---
 
